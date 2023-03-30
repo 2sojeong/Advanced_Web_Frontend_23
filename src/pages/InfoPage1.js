@@ -1,6 +1,11 @@
-import Header from '../components/Header';
+import Component1 from '../components/component1';
+import Header from '../components/header';
 const InfoPage1 = () => {
-    return <><Header /></>
+    return <>
+    <Header />
+    <br/>
+    <Component1/>
+    </>
 }
 
 export default InfoPage1;
