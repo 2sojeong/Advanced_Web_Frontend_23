@@ -6,7 +6,7 @@ const a = { cursor: 'pointer', textDecoration: 'none' }
 
 const Li = (props) => {
     return <li style={{ ...common, height: '100%', position: 'relative' }}>
-        <Link style={{ ...a, ...common, display: 'block', height: '100%', color: '#000', textTransform: 'uppercase', padding: '0 36px', lineHeight: '132px', }} to={{ pathname: '/contents' }}>
+        <Link style={{ ...a, ...common, display: 'block', height: '100%', color: '#000', textTransform: 'uppercase', padding: '0 36px', lineHeight: '132px', }} to={{ pathname: '/' + props.src }}>
             {props.children}
         </Link>
     </li>
@@ -21,10 +21,10 @@ const Header = () => {
                 </Link>
             </h1>
             <ul style={{ ...common, position: 'relative', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Li>company</Li>
-                <Li>r&d/product</Li>
-                <Li>ir/news</Li>
-                <Li>career</Li>
+                <Li src="tag">company</Li>
+                <Li src="info1">r&d/product</Li>
+                <Li src="info2">ir/news</Li>
+                <Li src='info2'>career</Li>
             </ul>
             <div style={{ ...common, width: '250px', display: 'flex', alignItems: 'center' }}>
                 Gachon University
