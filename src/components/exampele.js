@@ -1,5 +1,5 @@
 
-Component1 = () => {
+const Component1 = () => {
     return <div style={{
         paddingLeft: 0,
         paddingRight: 0,
