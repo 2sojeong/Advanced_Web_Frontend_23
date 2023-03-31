@@ -1,7 +1,8 @@
 import Header from '../components/header';
 import Visual from '../components/visual';
+import Footer from '../components/footer';
 const MainPage = () => {
-    return <><Header /><Visual /><div style={{ height: '1000px' }}>안녕하세요</div></>
+    return <><Header /><Visual /><div style={{ height: '1000px' }}>안녕하세요</div><Footer /></>
 }
 
 export default MainPage;
