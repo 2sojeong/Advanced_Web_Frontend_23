@@ -4,7 +4,6 @@ import Footer from '../components/footer';
 const InfoPage1 = () => {
     return <>
         <Header />
-        <br />
         <Component1 />
         <Footer />
     </>

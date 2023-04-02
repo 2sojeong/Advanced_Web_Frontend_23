@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 import Component10 from '../components/component10';
 const InfoPage2 = () => {
     return <>
-        {/* <Header /> */}
+        <Header />
         <Component8 />
         {/* <Component10/> */}
         <Footer />
