@@ -14,8 +14,8 @@ const Footer = () => {
                 <p style={{ ...infostyle, display: 'inline-block' }}>(주)코아팜바이오</p>
                 <p style={{ ...infostyle }}>경기도 성남시 수정구 복정로 103</p>
                 <p style={{ ...infostyle }}>충청북도 청주시 흥덕구 오송읍 오송생명14로 5(정중리 684)</p>
-                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: 'url(http://www.corepharm.com/img/mail.png) no-repeat center / cover', marginRight: '5px' }} />02-927-8220</p>
-                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: 'url(http://www.corepharm.com/img/call.png) no-repeat center / cover', marginRight: '5px' }} />info@corepharm.com</p>
+                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: 'url(http://www.corepharm.com/img/call.png) no-repeat center / cover', marginRight: '5px' }} />02-927-8220</p>
+                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: 'url(http://www.corepharm.com/img/mail.png) no-repeat center / cover', marginRight: '5px' }} />info@corepharm.com</p>
             </div>
             <div style={{ display: 'grid', width: '50%', gridTemplateColumns: 'repeat(4, auto)', gap: '20px', margin: 0, padding: 0 }}>
                 <ul style={ulstyle}>

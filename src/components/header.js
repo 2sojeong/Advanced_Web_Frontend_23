@@ -21,11 +21,15 @@ const Header = () => {
     }, []);
     const location = useLocation();
     const color = scrollevent ? '000' : location['pathname'] === '/' ? 'FFF' : '000';
+    const titlecolor = scrollevent ? 'black' : location['pathname'] === '/' ? 'white' : 'black';
     const a = { cursor: 'pointer', textDecoration: 'none' }
 
     const Li = (props) => {
-        return <li style={{ display: 'inline-block' }}>
-            <Link style={{ ...a, display: 'block', height: '100%', color: '#' + color, textTransform: 'uppercase', padding: '0 36px', margin: '0', transition: '10s' }} to={{ pathname: '/' + props.src }}>
+        return <li style={{ display: 'inline-block', position: 'relative' }}>
+            <Link style={{
+                ...a, display: 'block', height: '100%', color: '#' + color, padding: '0 36px', margin: '0', fontSize: '16px'
+            }} to={{ pathname: props.src }}>
+                {(location['pathname'] === props.src) && <div style={{ position: 'absolute', left: '35px', top: '30px', width: 'calc(100% - 70px)', display: 'inline', height: '2px', backgroundColor: '#1ec545' }} />}
                 {props.children}
             </Link>
         </li >
@@ -33,20 +37,21 @@ const Header = () => {
     return <>
         {location['pathname'] !== '/' && <div style={{ height: '132px' }}></div>}
         <div style={{ width: '100%', position: 'fixed', 'top': 0, 'left': 0, 'borderBottom': `1px solid ${scrollevent ? '#ddd' : 'transparent'}`, background: `${scrollevent ? '#fff' : 'transparent'}`, 'zIndex': 99999, transition: '.3s' }}>
-            <div style={{ height: `${scrollevent ? '90px' : '132px'}`, display: 'flex', 'alignItems': 'center', 'justifyContent': 'space-between', maxWidth: '1390px', width: '100%', padding: '0 20px', boxSizing: 'border-box', position: 'relative', margin: '0 auto', transition: '.3s' }}>
-                <h1 style={{ width: '185px', height: '72px', position: 'relative' }}>
-                    <Link style={{ display: 'block', width: '100%', height: '100%' }} to={{ pathname: '/' }}>
-                        <img style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: '0' }} src={bannerImg}></img>
+            <div style={{ height: `${scrollevent ? '75px' : '100px'}`, display: 'flex', 'alignItems': 'center', 'justifyContent': 'space-between', maxWidth: '1390px', width: '100%', padding: '0 20px', boxSizing: 'border-box', position: 'relative', margin: '0 auto', transition: '.3s' }}>
+                <h1 style={{ width: '185px', position: 'relative', fontSize: scrollevent ? '25px' : '30px', transition: '.3s' }}>
+                    <Link style={{ display: 'block', width: '100%', height: '100%', cursor: 'pointer', textDecoration: 'none', color: titlecolor }} to={{ pathname: '/' }}>
+                        SunYeol BIO
+                        {/*<img style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: '0' }} src={bannerImg}></img>*/}
                     </Link>
                 </h1>
                 <ul style={{ position: 'relative', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', listStyle: 'none', padding: '0' }}>
-                    <Li src="tag">company</Li>
-                    <Li src="info1">r&d/product</Li>
-                    <Li src="info2">ir/news</Li>
-                    <Li src='info2'>career</Li>
+                    <Li src="/tag">Company</Li>
+                    <Li src="/info1">R&D/Product</Li>
+                    <Li src="/info2">IR/News</Li>
+                    <Li src='/info2'>Career</Li>
                 </ul>
                 <div style={{
-                    width: '250px', display: 'flex', alignItems: 'center', color: '#' + color, padding: '0'
+                    width: '150px', display: 'flex', alignItems: 'center', color: '#' + color
                 }}>
                     Gachon University
                 </div>
