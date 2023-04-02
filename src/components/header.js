@@ -35,7 +35,7 @@ const Header = () => {
         </li >
     }
     return <>
-        {location['pathname'] !== '/' && <div style={{ height: '132px' }}></div>}
+        {location['pathname'] !== '/' && <div style={{ height: '100px' }}></div>}
         <div style={{ width: '100%', position: 'fixed', 'top': 0, 'left': 0, 'borderBottom': `1px solid ${scrollevent ? '#ddd' : 'transparent'}`, background: `${scrollevent ? '#fff' : 'transparent'}`, 'zIndex': 99999, transition: '.3s' }}>
             <div style={{ height: `${scrollevent ? '75px' : '100px'}`, display: 'flex', 'alignItems': 'center', 'justifyContent': 'space-between', maxWidth: '1390px', width: '100%', padding: '0 20px', boxSizing: 'border-box', position: 'relative', margin: '0 auto', transition: '.3s' }}>
                 <h1 style={{ width: '185px', position: 'relative', fontSize: scrollevent ? '25px' : '30px', transition: '.3s' }}>
