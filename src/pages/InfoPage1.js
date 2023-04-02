@@ -1,4 +1,5 @@
 import Component1 from '../components/component1';
+import Component4 from '../components/component4';
 import Header from '../components/header';
 import Footer from '../components/footer';
 const InfoPage1 = () => {
@@ -6,6 +7,7 @@ const InfoPage1 = () => {
         <Header />
         <br />
         <Component1 />
+        {/* <Component4 /> */}
         <Footer />
     </>
 }
