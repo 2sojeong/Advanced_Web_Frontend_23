@@ -27,7 +27,7 @@ const Header = () => {
     const Li = (props) => {
         return <li style={{ display: 'inline-block', position: 'relative' }}>
             <Link style={{
-                ...a, display: 'block', height: '100%', color: '#' + color, padding: '0 36px', margin: '0', fontSize: '16px'
+                ...a, display: 'block', height: '100%', textTransform: 'uppercase', color: '#' + color, padding: '0 36px', margin: '0', fontSize: '15px', fontWeight: 'bold'
             }} to={{ pathname: props.src }}>
                 {(location['pathname'] === props.src) && <div style={{ position: 'absolute', left: '35px', top: '30px', width: 'calc(100% - 70px)', display: 'inline', height: '2px', backgroundColor: '#1ec545' }} />}
                 {props.children}
