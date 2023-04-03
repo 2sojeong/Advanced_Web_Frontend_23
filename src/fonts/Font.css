@@ -5,6 +5,12 @@
 
 @font-face {
     font-family: 'AppleSDGothicNeo';
+    font-weight: normal;
+    src: url("./AppleSDGothicNeoM.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeo';
     font-weight: bold;
     src: url("./AppleSDGothicNeoB.ttf") format("truetype");
 }

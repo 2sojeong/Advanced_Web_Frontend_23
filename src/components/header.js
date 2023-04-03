@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import bannerImg from "../img/227_5.jpg";
 import React, { useState, useEffect, useMemo } from "react";
 import { throttle } from 'lodash'
 
@@ -45,7 +44,7 @@ const Header = () => {
                     }} to={{ pathname: '/' }}>
                         <span style={{
                             letterSpacing: '-1.2px',
-                            wordSpacing: '-7px',
+                            wordSpacing: '-6.5px',
                             fontWeight: 'normal'
                         }}>Soon Yeol</span> BIO
                         {/*<img style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: '0' }} src={bannerImg}></img>*/}
