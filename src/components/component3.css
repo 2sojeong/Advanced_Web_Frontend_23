@@ -1,0 +1,168 @@
+#container {
+    margin-top: 72px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+section,
+div,
+button,
+input,
+select,
+textarea {
+    font-family: 'Noto Sans KR', 'Noto+Sans', 'Malgun Gothic', '맑은 고딕', arial, sans-serif;
+}
+
+div {
+    display: block;
+}
+
+section {
+    display: block;
+}
+
+.container {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 48px;
+    max-width: 1312px;
+}
+
+.section-text {
+    margin-bottom: 64px;
+}
+
+.section-text .title-wrap {
+    margin-bottom: 16px;
+}
+
+.title-wrap {
+    display: flex;
+    position: relative;
+}
+
+.title-h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.ui-menu-img-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+.ui-menu-img-text .slogun-wrap {
+    flex-basis: 48%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-right: 10vw;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.ui-menu-img-text .slogun-wrap dl dt {
+    font-size: 56px;
+    font-weight: 800;
+    color: #000;
+}
+
+.font-mark {
+    font-family: 'Mark Pro' !important;
+}
+
+dt {
+    display: block;
+}
+
+.ui-menu-img-text .slogun-wrap dl dd {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 32px;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+dd {
+    display: block;
+
+}
+
+.is-mobile-show {
+    display: none;
+}
+
+.ui-menu-img-text .slogun-wrap p {
+    color: #333;
+    margin-top: 64px;
+    padding-right: 32px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.ui-menu-img-text .img-area {
+    flex-basis: 40%;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
