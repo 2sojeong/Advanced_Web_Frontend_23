@@ -5,7 +5,6 @@ const Component3 = () => {
     return (
         <>
             <div id="container" style={{
-                fontFamily: "'Noto Sans KR', 'Noto Sans', 'Malgun Gothic', 'Sunny Gothic', arial, sans-serif",
                 boxSizing: 'border-box'
             }}>
                 <section>
@@ -23,11 +22,10 @@ const Component3 = () => {
                                     <dt class="font-mark" >TWOSOME COFFEE STORY</dt>
                                     <dd>
                                         내 취향이 담긴 커피,
-                                        <br class="is-mobile-show" />
+                                        <br />
                                         투썸플레이스에는
-                                        <br class="is-mobile-hide" />
+                                        <br />
                                         내 취향을
-                                        <br class="is-mobile-show" />
                                         담아 섬세하게 만든
                                         <br />
                                         나만의 커피가 있습니다.

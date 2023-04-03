@@ -6,17 +6,6 @@
     box-sizing: border-box;
 }
 
-html,
-body,
-section,
-div,
-button,
-input,
-select,
-textarea {
-    font-family: 'Noto Sans KR', 'Noto+Sans', 'Malgun Gothic', '맑은 고딕', arial, sans-serif;
-}
-
 div {
     display: block;
 }
@@ -128,9 +117,6 @@ dd {
 
 }
 
-.is-mobile-show {
-    display: none;
-}
 
 .ui-menu-img-text .slogun-wrap p {
     color: #333;

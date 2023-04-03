@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import bannerImg from "../img/227_5.jpg";
 import React, { useState, useEffect, useMemo } from "react";
 import { throttle } from 'lodash'
 
@@ -21,7 +20,7 @@ const Header = () => {
     }, []);
     const location = useLocation();
     const color = scrollevent ? '000' : location['pathname'] === '/' ? 'FFF' : '000';
-    const titlecolor = scrollevent ? 'black' : location['pathname'] === '/' ? 'white' : 'black';
+    const titlecolor = scrollevent ? '#1ec545' : location['pathname'] === '/' ? 'white' : 'black';
     const a = { cursor: 'pointer', textDecoration: 'none' }
 
     const Li = (props) => {
@@ -39,8 +38,15 @@ const Header = () => {
         <div style={{ width: '100%', position: 'fixed', 'top': 0, 'left': 0, 'borderBottom': `1px solid ${scrollevent ? '#ddd' : 'transparent'}`, background: `${scrollevent ? '#fff' : 'transparent'}`, 'zIndex': 99999, transition: '.3s' }}>
             <div style={{ height: `${scrollevent ? '75px' : '100px'}`, display: 'flex', 'alignItems': 'center', 'justifyContent': 'space-between', maxWidth: '1390px', width: '100%', padding: '0 20px', boxSizing: 'border-box', position: 'relative', margin: '0 auto', transition: '.3s' }}>
                 <h1 style={{ width: '185px', position: 'relative', fontSize: scrollevent ? '25px' : '30px', transition: '.3s' }}>
-                    <Link style={{ display: 'block', width: '100%', height: '100%', cursor: 'pointer', textDecoration: 'none', color: titlecolor }} to={{ pathname: '/' }}>
-                        SunYeol BIO
+                    <Link style={{
+                        display: 'block', width: '100%', height: '100%', cursor: 'pointer', textDecoration: 'none', color: titlecolor,
+                        wordSpacing: '-4px'
+                    }} to={{ pathname: '/' }}>
+                        <span style={{
+                            letterSpacing: '-1.2px',
+                            wordSpacing: '-6.5px',
+                            fontWeight: 'normal'
+                        }}>Soon Yeol</span> BIO
                         {/*<img style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: '0' }} src={bannerImg}></img>*/}
                     </Link>
                 </h1>
