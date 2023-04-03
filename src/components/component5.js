@@ -39,7 +39,7 @@ const Component5 = () => {
                                     <iframe style={{ ...a }} id="about-intro__yt" width="1244" height="699" src="https://www.youtube.com/embed/krdRA79NNRc?version=3&amp;loop=1&amp;autoplay=0&amp;rel=0&amp;showsearch=0&amp;showinfo=0&amp;enablejsapi=1" allow="autoplay" allowfullscreen="" title="혁신을 쉽게. 카카오엔터프라이즈"></iframe>
 
                                     <div style={{ ...a }} class="ke-embed-video__poster">
-                                        <span class="ke-embed-video__bg" data-unveil="https://kakaoenterprise.com/wp-content/themes/kakaoenterprise/images/sub/info/about-intro-poster.jpg?v1.1" style="background-image:url(https://kakaoenterprise.com/wp-content/themes/kakaoenterprise/images/sub/info/about-intro-poster.jpg?v1.1);"></span>
+                                        <span class="ke-embed-video__bg" data-unveil="https://kakaoenterprise.com/wp-content/themes/kakaoenterprise/images/sub/info/about-intro-poster.jpg?v1.1" style={{ backgroundImage: 'url(https://kakaoenterprise.com/wp-content/themes/kakaoenterprise/images/sub/info/about-intro-poster.jpg?v1.1);' }}></span>
                                         <span style={{ ...a }} class="ke-embed-video__overlay"><i class="ke-embed-video__overlay-btn"></i></span>
                                     </div>
                                 </div>
