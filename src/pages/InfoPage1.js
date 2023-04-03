@@ -7,6 +7,7 @@ const InfoPage1 = () => {
     return <>
         <Header />
         <Component1 />
+        <Component3 />
         <Component4 />
         <Footer />
     </>
