@@ -48,7 +48,7 @@ const Header = () => {
                     <Li src="/tag">Company</Li>
                     <Li src="/info1">R&D/Product</Li>
                     <Li src="/info2">IR/News</Li>
-                    <Li src='/info2'>Career</Li>
+                    <Li src='/info3'>Career</Li>
                 </ul>
                 <div style={{
                     width: '150px', display: 'flex', alignItems: 'center', color: '#' + color

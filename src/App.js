@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage";
 import TagPage from './pages/TagPage';
 import InfoPage1 from './pages/InfoPage1';
 import InfoPage2 from './pages/InfoPage2';
+import InfoPage3 from './pages/InfoPage3';
 
 function App() {
   return (
@@ -30,6 +31,12 @@ function App() {
         path="/info2"
         element={
           <InfoPage2 />
+        }
+      />
+      <Route
+        path="/info3"
+        element={
+          <InfoPage3 />
         }
       />
     </Routes>
