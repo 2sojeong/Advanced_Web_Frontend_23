@@ -3,9 +3,9 @@ import React from "react";
 const Component4 = () => {
     return <>
         <div class="component-intro component-intro--split component-intro--dark" style={{ fontFamily: "'KakaoBig',sans-serif", fontSize: "16", wordBreak: "keep-all", display: "block", color: "#191919", verticalAlign: "baseline" }}>
-            <div class="wrap-middle" style={{ margin: "0 50px", position: "relative", display: "block" }}>
+            <div class="wrap-middle" style={{ margin: "0 48px ", position: "relative", display: "block" }}>
                 <div class="component-intro__inner" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", columnGap: "10", minHeight: "470px", tableLayout: "fixed", width: "100%", position: "relative" }}>
-                    <div class="component-intro__info" style={{ display: "flex", borderRadius: "20px", width: "auto", fontSize: "16px", verticalAlign: "middle", position: "relative", background: "#0082FF", paddingLeft: "108", paddingRight: "108px", paddingTop: "0", paddingBottom: "0", padding: "0px 100px 0px 100px", overflow: "hidden" }}>
+                    <div class="component-intro__info" style={{ margin: "0 5px 0 0", display: "flex", borderRadius: "20px", width: "auto", fontSize: "16px", verticalAlign: "middle", position: "relative", background: "#0082FF", paddingLeft: "108", paddingRight: "108px", paddingTop: "0", paddingBottom: "0", padding: "0px 100px 0px 100px", overflow: "hidden" }}>
                         <div class="component-intro__info-inner" style={{ alignSelf: "center", display: "block" }}>
                             <span class="component-intro__label" style={{ color: "#FFFFFF", display: "block", fontSize: "15px", lineHeight: "1.87", fontWeight: "600", letterSpacing: "-2px" }}>카카오 i 클라우드</span>
                             <h2 class="component-intro__title" style={{ color: "#FFFFFF", fontSize: "30px", fontWeight: "600", letterSpacing: "-4px", marginTop: "10px", marginBottom: "0" }}>기업용 통합 클라우드 플랫폼</h2>
@@ -35,7 +35,7 @@ const Component4 = () => {
 
                     <div class="component-intro__easel" style={{ display: "block", width: "auto", verticalAlign: "middle", position: "relative" }}>
                         <div class="component-intro__bg" style={{ width: "100%", height: "100%", position: "absolute", left: 0, right: 0, top: 0, bottom: 0 }}>
-                            <div class="component-intro__bg-image" style={{ height: "100%" }}>
+                            <div class="component-intro__bg-image" style={{ margin: "0 0 0 5px", height: "100%" }}>
                                 <img src='https://kakaoenterprise.com/wp-content/uploads/2022/04/intro-cloud-2.jpg' style={{ borderRadius: "20px", width: "100%", height: "100%", background: "center", backgroundSize: "cover", display: "block" }}></img></div>
 
                             <div class="component-intro__bg-option">
