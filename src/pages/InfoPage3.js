@@ -1,6 +1,6 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
-import Component5 from '../components/component5';
+import Component13 from '../components/Component13';
 import Component10_1 from '../components/component10_1';
 import Component10_2 from '../components/component10_2';
 const InfoPage3 = () => {

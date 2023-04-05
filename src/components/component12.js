@@ -3,7 +3,7 @@ import React from "react";
 const Component12 = () => {
     return (
         <>
-            <div style={{ position: 'relative', minHeight: '360px', verticalAlign: 'baseline', marginRight: "auto", marginLeft: "auto", padding: '0', border: '0', boxSizing: 'border-box', display: 'block' }} className="article-body">
+            <div style={{ position: 'relative', minHeight: '360px', verticalAlign: 'baseline', marginRight: "auto", marginLeft: "auto", marginTop: '50px', padding: '0', border: '0', boxSizing: 'border-box', display: 'block' }} className="article-body">
                 <div style={{ marginLeft: 'auto', marginRight: 'auto', maxWidth: '1400px', position: 'relative', verticalAlign: 'baseline', padding: '0', border: '0', boxSizing: 'border-box', display: 'block' }} className="wrap-middle">
 
                     <form style={{ margin: '0', padding: '0', border: '0', verticalAlign: 'baseline', boxSizing: 'border-box', display: 'block' }} id="case_form" className="case_form" action="https://kakaoenterprise.com/case/">
