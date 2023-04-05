@@ -3,7 +3,7 @@ import React from "react";
 const Component12 = () => {
     return (
         <>
-            <div style={{ position: 'relative', minHeight: '360px', verticalAlign: 'baseline', margin: '0', padding: '0', border: '0', boxSizing: 'border-box', display: 'block' }} className="article-body">
+            <div style={{ width: '100%', position: 'relative', minHeight: '360px', verticalAlign: 'baseline', margin: '0', padding: '0', border: '0', boxSizing: 'border-box', display: 'block' }} className="article-body">
                 <div style={{ margin: '0 32px', maxWidth: 'inherit', position: 'relative', verticalAlign: 'baseline', padding: '0', border: '0', boxSizing: 'border-box', display: 'block' }} className="wrap-middle">
 
                     <form style={{ margin: '0', padding: '0', border: '0', verticalAlign: 'baseline', boxSizing: 'border-box', display: 'block' }} id="case_form" className="case_form" action="https://kakaoenterprise.com/case/">
@@ -66,7 +66,7 @@ const Component12 = () => {
 
 
                                 <div className="ke-thumb-list__item">
-                                    <a style={{ margin: '0', padding: '0', border: '0', verticalAlign: 'baseline', boxSizing: 'border-box', display: 'block', color: '#191919', textDecoration: 'none', cursor: 'pointer' }} className="ke-thumb-list__link" href="https://kakaoenterprise.com/case/%ec%94%a8%ec%97%94%ed%85%8c%ed%81%ac/">
+                                    <a style={{ wordBreak: 'keep-all', margin: '0', padding: '0', border: '0', verticalAlign: 'baseline', boxSizing: 'border-box', display: 'block', color: '#191919', textDecoration: 'none', cursor: 'pointer' }} className="ke-thumb-list__link" href="https://kakaoenterprise.com/case/%ec%94%a8%ec%97%94%ed%85%8c%ed%81%ac/">
                                         <div style={{ height: 'auto', opacity: '1', borderRadius: '30px', overflow: 'hidden', display: 'block', width: '100%', transition: 'opacity .3s', }} className="ke-thumb-list__img">
                                             <figure className="ke-lazyload ke-lazyload--loaded">
                                                 <span className="ke-lazyload__color-preview"></span>
