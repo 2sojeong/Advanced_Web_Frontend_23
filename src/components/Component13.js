@@ -26,6 +26,8 @@ const Component13 = () => {
                 }}></p>
                 <p style={{ fontSize: "18px" }}>셀트리온의 항체 바이오시밀러는 환자들에게 합리적 비용으로</p>
                 <p style={{ fontSize: "18px" }}>고품질 바이오의약품 치료를 받을 수 있는 기회를 제공합니다</p>
+                <p></p>
+                <p></p>
             </div>
 
             <img style={{ width: "50%", display: 'block' }} src="https://cellhomeblob.blob.core.windows.net/bns/191713570956-c6c1b49b-a1e9-43c1-9a95-34a6db491d93.jpg"></img>
