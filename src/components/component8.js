@@ -1,155 +1,118 @@
-            const Component8 = () => {
+const Component8 = (propss) => {
+
+
+    const Contextbig=(props)=>{
+        const tags=props.tags
+        let btagString = '';
+        if (tags && tags.length > 0) {
+        btagString = tags.join(' #');
+        }
+        return <>
+            <div style={{ position: "relative", width: "100%" }}>
+                                <a>
+                                    <div style={{ width: "100%", height: "100%", overFlow: "hidden" }}>
+                                        <div>
+                                            <img src={props.imgurl}alt style={{ width: "620px", height: "435px", verticalAlign: "top", border: "0" }}></img>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style={{ paddingTop: "30px", paddingBottom: "10px", backgroundColor: "#ffed93" }}>
+                                <div style={{ minHeight: "25px", marginLeft: "20px", width: "90%" }}>
+                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#{btagString}</span>
+                                </div>
+                                <div>
+                                    <a style={{ fontSize: "30px", marginLeft: "20px", color: "#333", fontWeight: "bold", textDecoration: "none" }}>{props.name}</a>
+                                </div>
+                            </div>
+        </>
+    }
+
+
+    const Context=(props)=>{
+        const tags=props.tags
+        let tagString = '';
+        if (tags && tags.length > 0) {
+        tagString = tags.join(' #');
+        }
+        return <>
+        <div style={{ width: "100%", position: "relative" }}>
+                                <a>
+                                    <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
+                                        <div>
+                                            <img src={props.imgurl} alt style={{ width: "305px", height: "215px", verticalAlign: "top", border: "0" }}></img>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div style={{ paddingTop: "30px", paddingBottom: "10px" }}>
+                                <div style={{ minHeight: "25px" }}>
+                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#{tagString}</span>
+                                </div>
+                                <div>
+                                    <a style={{ fontSize: "22px", color: "#333", fontWeight: "bold", textDecoration: "none" }}>{props.name}</a>
+                                </div>
+                            </div>
+        </>
+    }
+
+
     return (
         <>
             <div style={{ marginTop: "30px" }}>
-                <h2 style={{ fontSize: "40px", textAlign: "center" }}>추천레시피</h2>
+                <h2 style={{ fontSize: "40px", textAlign: "center" }}>{propss.title1}</h2>
                 <span style={{
                     width: "37px", height: "2px", background: "#000", marginTop: "20px", marginRight: "auto", marginLeft: "auto",
                     marginBottom: "10px", display: "block", content: ''
                 }}></span>
-                <p style={{ fontSize: "20px", textAlign: "center" }}>오뚜기가 제안하는 레시피로 최고의 순간을 만들어 보세요.</p>
+                <p style={{ fontSize: "20px", textAlign: "center" }}>{propss.title2}</p>
                 <div className="thmb_list02" style={{ width: "100%", paddingTop: "30px", width: "1280px", display: "table", marginRight: "auto", marginLeft: "auto", position: "relative", marginBottom: "20px" }}>
                     <div className="list_area" style={{ width: "100%", display: "table" }}>
                         <div className="item_big" style={{
                             float: "left", width: "620px", marginRight: "40px",
                             verticalAlign: "top", paddingTop: "15px", paddingBottom: "15px", minHeight: "550px"
-                        }}>
-                            <div className="thmb" style={{ width: "100%", position: "relative" }}>
-                                <a href="../category/detail.asp?idx=1184" style={{ textDecoration: 'none' }}>
-                                    <div className="img" style={{ width: "100%", height: "100%", overflow: "hidden" }}>
-                                        <div className="scale">
-                                            <img src="https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg" alt style={{ width: "620px", height: "435px", verticalAlign: "top", border: "0" }}></img>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="info" style={{ paddingTop: "30px", paddingBottom: "10px", backgroundColor: "#ffed93" }}>
-                                <div className="info_tag" style={{ marginLeft: "20px", width: "90%", minHeight: "25px" }}>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#요리초보</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#요린이</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#봄</span>
-                                </div>
-                                <div className="info_title ellip">
-                                    <a href="../category/detail.asp?idx=1184" style={{ fontSize: "30px", marginLeft: "20px", color: "#333", fontWeight: "bold", textDecoration: "none" }}>봄 된장 비빔밥</a>
-                                </div>
-                            </div>
+                            }}>
+                                {propss.data[0].map((item,index)=>{
+                                    return <Contextbig imgurl={item.imgurl} tags={item.tag} name={item.name}/>
+                                })}
+                            
                         </div>
                         <div className="item" style={{
                             float: "left", width: "300px", minHeight: "300px", marginRight: "20px", verticalAlign: "top",
                             paddingTop: "15px", paddingBottom: "15px"
-                        }}>
-                            <div className="thmb" style={{ width: "100%", position: "relative" }}>
-                                <a href="../category/detail.asp?idx=1195">
-                                    <div className="img" style={{ width: "100%", height: "100%", overflow: "hidden" }}>
-                                        <div className="scale">
-                                            <img src="https://ottogi.okitchen.co.kr/pds/upfile/2021-06-26_856606119[14].jpg" alt style={{ width: "305px", height: "215px", verticalAlign: "top", border: "0" }}></img>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="info" style={{ paddingTop: "30px", paddingBottom: "10px" }}>
-                                <div className="info_tag" style={{ minHeight: "25px" }}>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#열라면</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#돈까스</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#돈까스김치나베</span>
-                                </div>
-                                <div className="info_title ellip">
-                                    <a href="../category/detail.asp?idx=1195" style={{ fontSize: "22px", color: "#333", fontWeight: "bold", textDecoration: "none" }}>돈까스 김치나베 라면</a>
-                                </div>
-                            </div>
+                             }}>
+                                 {propss.data[1].map((item,index)=>{
+                                    return <Context imgurl={item.imgurl} tags={item.tag} name={item.name}/>
+                                })}
                         </div>
                         <div className="item" style={{
                             float: "left", width: "300px", minHeight: "300px", verticalAlign: "top",
                             paddingTop: "15px", paddingBottom: "15px"
-                        }}>
-                            <div className="thmb" style={{ width: "100%", position: "relative" }}>
-                                <a href="../category/detail.asp?idx=1364">
-                                    <div className="img" style={{ width: "100%", height: "100%", overflow: "hidden" }}>
-                                        <div className="scale">
-                                            <img src="https://ottogi.okitchen.co.kr/pds/upfile/2023-02-08_361906995[4].jpg" alt style={{ width: "305px", height: "215px", verticalAlign: "top", border: "0" }}></img>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="info" style={{ paddingTop: "30px", paddingBottom: "10px" }}>
-                                <div className="info_tag" style={{ minHeight: "25px" }}>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#딸기</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#케이크</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#핫케이크믹스</span>
-                                </div>
-                                <div className="info_title ellip">
-                                    <a href="../category/detail.asp?idx=1364" style={{ fontSize: "22px", color: "#333", fontWeight: "bold", textDecoration: "none" }}>딸기케이크</a>
-                                </div>
-                            </div>
+                             }}>
+                                {propss.data[2].map((item,index)=>{
+                                    return <Context imgurl={item.imgurl} tags={item.tag} name={item.name}/>
+                                })}
                         </div>
                         <div className="item big no6" style={{ float: "right" }}>
-                            <div className="thmb" style={{ position: "relative", width: "100%" }}>
-                                <a href="../category/detail.asp?idx=1091">
-                                    <div className="img" style={{ width: "100%", height: "100%", overFlow: "hidden" }}>
-                                        <div className="scale">
-                                            <img src="https://ottogi.okitchen.co.kr/pds/upfile/2020-08-25_427865954[10].jpg" alt style={{ width: "620px", height: "435px", verticalAlign: "top", border: "0" }}></img>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="info" style={{ paddingTop: "30px", paddingBottom: "10px", backgroundColor: "#ffed93" }}>
-                                <div className="info_tag" style={{ minHeight: "25px", marginLeft: "20px", width: "90%" }}>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#볶음밥X라조장</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#계란요리</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#치즈듬뿍</span>
-                                </div>
-                                <div className="info_title ellip">
-                                    <a href="../category/detail.asp?idx=1091" style={{ fontSize: "30px", marginLeft: "20px", color: "#333", fontWeight: "bold", textDecoration: "none" }}>한라산볶음밥</a>
-                                </div>
-                            </div>
+                                 {propss.data[5].map((item,index)=>{
+                                    return <Contextbig imgurl={item.imgurl} tags={item.tag} name={item.name}/>
+                                })}
                         </div>
                         <div className="item" style={{
                             float: "left", width: "300px", minHeight: "300px", marginRight: "20px", verticalAlign: "top",
                             paddingTop: "15px", paddingBottom: "15px"
-                        }}>
-                            <div className="thmb">
-                                <a href="../category/detail.asp?idx=1053">
-                                    <div className="img" style={{ width: "100%", height: "100%", overFlow: "hidden" }}>
-                                        <div className="scale">
-                                            <img src="https://ottogi.okitchen.co.kr/pds/upfile/2020-08-24_427850333[24].jpg" alt style={{ width: "305px", height: "215px", verticalAlign: "top", border: "0" }}></img>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="info" style={{ paddingTop: "30px", paddingBottom: "10px" }} >
-                                <div className="info_tag" style={{ minHeight: "25px" }}>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#갈릭아이올리</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#계란요리</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#브런치</span>
-                                </div>
-                                <div className="info_title ellip">
-                                    <a href="../category/detail.asp?idx=1053" style={{ fontSize: "22px", color: "#333", fontWeight: "bold", textDecoration: "none" }}>에그마요 샌드위치</a>
-                                </div>
-                            </div>
+                              }}>
+                                {propss.data[3].map((item,index)=>{
+                                    return <Context imgurl={item.imgurl} tags={item.tag} name={item.name}/>
+                                })}
                         </div>
                         <div className="item" style={{
                             float: "left", width: "300px", minHeight: "300px", marginRight: "20px", verticalAlign: "top",
                             paddingTop: "15px", paddingBottom: "15px"
-                        }} >
-                            <div className="thmb">
-                                <a href="../category/detail.asp?idx=1351">
-                                    <div className="img" style={{ width: "100%", height: "100%", overFlow: "hidden" }}>
-                                        <div className="scale">
-                                            <img src="https://ottogi.okitchen.co.kr/pds/upfile/2022-11-22_560625401[8].jpg" alt style={{ width: "305px", height: "215px", verticalAlign: "top", border: "0" }}></img>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div className="info" style={{ paddingTop: "30px", paddingBottom: "10px" }}>
-                                <div className="info_tag" style={{ minHeight: "25px" }}>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#열라면</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#투움바</span>
-                                    <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#프레스코</span>
-                                </div>
-                                <div className="info_title ellip">
-                                    <a href="../category/detail.asp?idx=1351" style={{ fontSize: "22px", color: "#333", fontWeight: "bold", textDecoration: "none" }}>열라면 투움바</a>
-                                </div>
-                            </div>
+                             }} >
+                                {propss.data[4].map((item,index)=>{
+                                    return <Context imgurl={item.imgurl} tags={item.tag} name={item.name}/>
+                                })}
                         </div>
                     </div>
                 </div>

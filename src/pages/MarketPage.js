@@ -12,7 +12,7 @@ import Component10 from "../components/component10";
 const MarketPage = () =>
     <>
         <Header />
-        <Component1 />
+        <Component1 title1='FEATURED SERVICES' contents={['네이버는 기술 플랫폼으로서 첨단 기술을 누구나 쉽게 활용할 수 있는 일상의 친숙한 서비스로 제공하기 위해','변화를 추구하고, 이용자와 호흡하며 항상 새로운 도전을 시도합니다.']}/>
         <Component2 />
         <Component3 />
         <Component4 />
