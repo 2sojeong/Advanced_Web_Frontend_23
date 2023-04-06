@@ -1,6 +1,6 @@
 import React from "react";
 
-const Component13 = () => {
+const Component13 = (props) => {
     return (
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <div style={{
@@ -15,7 +15,7 @@ const Component13 = () => {
                     lineHeight: "70px",
                     fontWeight: "500",
                     letterSpacing: "-3px"
-                }}>Biologics<br />
+                }}>{props.head}<br />
                     <span style={{
                         fontSize: "60px",
                         fontWeight: "300"
@@ -24,11 +24,11 @@ const Component13 = () => {
                     lineHeight: "46px",
                     wordBreak: "keep-all"
                 }}></p>
-                <p style={{ fontSize: "18px" }}>셀트리온의 항체 바이오시밀러는 환자들에게 합리적 비용으로</p>
-                <p style={{ lineHeight: "7px", fontSize: "18px" }}>고품질 바이오의약품 치료를 받을 수 있는 기회를 제공합니다</p>
+                <p style={{ fontSize: "18px" }}>{props.content1}</p>
+                <p style={{ lineHeight: "7px", fontSize: "18px" }}>{props.content2}</p>
                 <p></p>
                 <p style={{ marginTop: "50px" }}>
-                    <a style={{ fontSize: "14px", color: "#000", textDecoration: "none", }} href="https://www.celltrion.com/ko-kr/Business/Self">Learn more
+                    <a style={{ fontSize: "14px", color: "#000", textDecoration: "none", }} href="https://www.celltrion.com/ko-kr/Business/Self"> {props.button}
                         <img style={{
                             verticalAlign: "middle",
                             paddingLeft: "10px"
@@ -37,7 +37,7 @@ const Component13 = () => {
                 </p>
             </div>
 
-            <img style={{ width: "50%", display: 'block' }} src="https://cellhomeblob.blob.core.windows.net/bns/191713570956-c6c1b49b-a1e9-43c1-9a95-34a6db491d93.jpg"></img>
+            <img style={{ width: "50%", display: 'block' }} src={props.img}></img>
         </div>
     );
 }
