@@ -7,7 +7,7 @@ const b = {
     padding: 0
 }
 
-const Component3 = () => {
+const Component3 = (props) => {
     return (
         <>
             <div id="container" style={{
@@ -24,7 +24,7 @@ const Component3 = () => {
                                 ...a,
                                 marginBottom: "16px",
                             }}>
-                                <h1 class="title-h1">커피이야기</h1>
+                                <h1 class="title-h1">{props.head}</h1>
                             </div>
                         </section>
                     </div>
@@ -51,20 +51,20 @@ const Component3 = () => {
                                         fontWeight: "700",
                                         color: "#000", marginTop: "32px"
                                     }}>
-                                        내 취향이 담긴 커피,
+                                        {props.content1}
                                         <br />
-                                        투썸플레이스에는
+                                        {props.content2}
                                         <br />
-                                        내 취향을 담아 섬세하게 만든
+                                        {props.content3}
                                         <br />
-                                        나만의 커피가 있습니다.
+                                        {props.content4}
                                     </dd>
                                 </dl>
                                 <p style={{
                                     ...a, ...b, color: "#333",
                                     marginTop: "64px", paddingRight: "32px"
                                 }}>
-                                    투썸플레이스 큐그레이더(Q-Grader)는 좋은 산지의 신선한 원두만을 선별해 각각 다른 개성의 세가지 블렌드를 제공합니다. 원두 타입별 최적의 밸런스를 맞춘 로스팅 포인트, 최상의 에스프레소 추출 기술이 더해져 투썸플레이스만의 커피가 완성됩니다.
+                                    {props.content5}
                                 </p>
                             </div>
                             <div style={{
@@ -76,7 +76,7 @@ const Component3 = () => {
                                     height: "auto",
                                     maxWidth: "100%",
                                     verticalAlign: "middle"
-                                }} src="https://www.twosome.co.kr/resources/images/content/img_p_coffeestory.jpg" alt="커피 사진"></img>
+                                }} src={props.img} alt="커피 사진"></img>
                             </div>
                         </div>
                     </div>
