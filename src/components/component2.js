@@ -3,7 +3,7 @@ import React from "react";
 const Component2 = () => {
     return (
         <>
-            <div style={{ maxWidth: '100%', width: '100%', position: 'relative', margin: '0 auto', border: '0', display: 'flex', justifyContent: 'center' }} class="Home_career-banner">
+            <div style={{ maxWidth: '100%', width: '100%', position: 'relative', margin: '100px auto', border: '0', justifyContent: 'center' }} class="Home_career-banner">
                 <figure style={{ isolation: 'isolate', display: 'block', padding: '0px', margin: '0px' }} class="Home_career-banner__thum">
                     <picture style={{ width: '100%', textAlign: 'center', wordBreak: 'keep-all', display: 'block', margin: '0', padding: '0' }}>
 
@@ -20,7 +20,7 @@ const Component2 = () => {
 
                     </picture>
                 </figure>
-                <div style={{ maxWidth: '1100px', width: '100%', position: 'absolute', padding: '0', top: 'calc(50% - 110px)', color: '#ffffff' }} class="Home_career-banner__text">
+                <div style={{ maxWidth: '1100px', width: '100%', position: 'absolute', padding: '0', top: 'calc(50% - 110px)', left: 'calc(50% - 700px)', color: '#ffffff' }} class="Home_career-banner__text">
                     <div style={{ fontSize: '30px', fontWeight: '700', marginBottom: '10px' }} class="Home_career-banner__title">채용</div>
                     <div style={{ fontSize: '40px', fontWeight: '700' }} class="Home_career-banner__description highContrastTarget">
                         함께 지식을 쌓고<br />
