@@ -1,13 +1,15 @@
 import bannerImg from "../img/227_5.jpg";
 import { Link } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
 const Footer = () => {
     const listSyle = { listStyle: 'none' }
     const linkstyle = { color: 'rgba(17,17,17,0.6)', fontSize: '13px', fontWeight: '400', letterSpacing: '0.2pt', lineHeight: '28px', cursor: 'pointer', textDecoration: 'none' }
     const spanstyle = { display: 'inline-block', color: '#111', fontSize: '15px', fontWeight: '500', letterSpacing: '0.3pt', lineHeight: '30px', marginBottom: '15px', textTransform: 'uppercase' }
     const ulstyle = { position: 'relative', listSyle: 'none', padding: '0', margin: '0', lineHeight: '155%' }
     const infostyle = { color: '#888', fontSize: '14px', fontWeight: '400', letterSpacing: '-0.3pt', lineHeight: '180%', margin: '0', marginRight: '14px', wordBreak: 'keep-all' }
-    return <><div style={{ maxWidth: '1390px', width: '100%', height: '1px', background: '#ddd', margin: '0 auto', padding: '0 20px' }} />
+    const location = useLocation();
+    return <>
+        {location['pathname'] !== '/' && <div style={{ maxWidth: '1390px', width: '100%', height: '1px', background: '#ddd', margin: '0 auto', padding: '0 20px' }} />}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '60px 20px 80px 116px', maxWidth: '1390px', width: '100%', boxSizing: 'border-box', position: 'relative', margin: '0 auto' }}>
             <div>
                 <h1 style={{ width: '154px', height: '59px', marginBottom: '70px', padding: 0, }}><img src={bannerImg} style={{ width: '100%' }} /></h1>

@@ -1,4 +1,4 @@
-const Component8 = () => {
+            const Component8 = () => {
     return (
         <>
             <div style={{ marginTop: "30px" }}>
