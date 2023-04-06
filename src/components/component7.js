@@ -5,7 +5,7 @@ const Component7 = () => {
         <>
             <div class="layout-container" style={{ float: "left", clear: "none", width: "100%", boxSizing: "border-box", display: "block" }}>
                 <div class="aem-Grid" style={{ display: "block", width: "100%", boxSizing: "border" }}>
-                    <div class="container" id="layout-container-uid9715" data-componentname="layout-container-uid9715" style={{ maxWidth: "1600px", paddingRight: "5%", paddingLeft: "5%", width: "90%", boxSizing: "contentBox", marginRight: "auto", marginLeft: "100px", display: "block", color: "#000000", textAlign: "left", fontWeight: "400", lineHeight: "1.5", fontSize: "1rem" }}>
+                    <div class="container" id="layout-container-uid9715" data-componentname="layout-container-uid9715" style={{ maxWidth: "1600px", paddingRight: "5%", paddingLeft: "5%", width: "90%", boxSizing: "contentBox", marginRight: "auto", marginLeft: "auto", display: "block", color: "#000000", textAlign: "left", fontWeight: "400", lineHeight: "1.5", fontSize: "1rem" }}>
                         <div class="mosaic aem-GridColumn aem-GridColumn--default--12" data-component-id="8bd78f73dea974d25cbd8dadcc2b89fb" style={{ boxSizing: "border-box", clear: "both", margin: "0 90px 0 -130px" }}>
                             <div class="row no-gutters align-items-center" data-oc="oc25e2" id="mosaic-uidc824" style={{ alignItems: "center", marginRight: "0", marginLeft: 0, display: "flex", boxSizing: "border-box" }}>
                                 <div class="d-flex col-lg justify-content-lg-start" style={{ paddingRight: 0, paddingLeft: 0, justifyContent: "flex-start", display: "flex", flexBasis: 0, flexGrow: 1, maxWidth: "100%", position: "relative", width: "100%", boxSizing: "border-box" }}>
