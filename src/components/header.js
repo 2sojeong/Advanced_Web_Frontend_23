@@ -51,10 +51,10 @@ const Header = () => {
                     </Link>
                 </h1>
                 <ul style={{ position: 'relative', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', listStyle: 'none', padding: '0' }}>
-                    <Li src="/tag">Company</Li>
-                    <Li src="/info1">R&D/Product</Li>
-                    <Li src="/info2">IR/News</Li>
-                    <Li src='/info3'>Career</Li>
+                    <Li src="/tag">News</Li>
+                    <Li src="/info1">Medicine</Li>
+                    <Li src="/info2">Bio&technology</Li>
+                    <Li src='/info3'>HealthCare</Li>
                 </ul>
                 <div style={{
                     width: '150px', display: 'flex', alignItems: 'center', color: '#' + color

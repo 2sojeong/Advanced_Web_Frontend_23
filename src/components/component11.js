@@ -3,7 +3,7 @@ import React from "react";
 const Component11 = () => {
     return (
         <>
-            <div class="filters" style={{ boxSizing: "border-box", marginTop: "150px", boxShadow: "0 4px 4px 0 rgba(0,0,0, .1)", background: "#fff" }}>
+            <div class="filters" style={{ boxSizing: "border-box", marginTop: "10px", boxShadow: "0 1px 1px 0 rgba(0,0,0, .1)", background: "#fff" }}>
                 <div class="scroll-wrapper scroll-area scrollbar-macosx" style={{ position: "relative" }}>
                     <div class="scroll-area scrollbar-macosx scroll-content" data-offset="414.7857360839844" style={{ height: "auto", marginBottom: "0px", marginRight: "0px", maxHeight: "56px" }}>
                         <div class="container" style={{ textAlign: "center", boxSizing: "border-box", maxWidth: "1420px", padding: "0px 25px", position: "relative", margin: "0 auto", verticalAlign: "baseline" }}>
