@@ -20,7 +20,6 @@ const MarketPage = () =>
         <Component5 content1='우리는 꿈을 현실로 만드는 여정에 함께하는 동반자들이다.' content2='우리는 사람들이 자신의 꿈을 실현하는 것을 도움으로써' content3='더 나은 세상을 만드는데 기여한다.' content4='기술과 서비스,' content5='그리고 혁신적인 아이디어로 우리 모두의 꿈을 현실로 만듭니다.' img='https://kakaoenterprise.com/wp-content/themes/kakaoenterprise/images/sub/info/about-intro-poster.jpg?v1.1' />
         <Component6 />
         <Component7 />
-        <Component8 />
         <Component10 head='한 차원 높은 성능' contents={['프리미엄 기능과 원하는 방식으로 커스터마이징', '할 수 있는 기능으로 Mac 생산성을 한 차원 높여주세요.']} />
         <Component10 reverse={true} head='한 차원 높은 성능' contents={['프리미엄 기능과 원하는 방식으로 커스터마이징', '할 수 있는 기능으로 Mac 생산성을 한 차원 높여주세요.']} />
         <Footer />
