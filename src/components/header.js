@@ -59,7 +59,7 @@ const Header = () => {
                 <div style={{
                     width: '150px', display: 'flex', alignItems: 'center', color: '#' + color
                 }}>
-                    Gachon University
+                    <Link style={{ ...a, color: '#' + color }} to={{ pathname: '/market' }}>Gachon University</Link>
                 </div>
             </div >
         </div ></>

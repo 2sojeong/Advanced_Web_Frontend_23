@@ -8,11 +8,6 @@ import Component3 from '../components/component3';
 const InfoPage1 = () => {
         return <>
                 <Header />
-                <Component1 />
-                <Component2 />
-                <Component3 />
-                <Component4 />
-                <Component6 />
                 <Footer />
         </>
 }

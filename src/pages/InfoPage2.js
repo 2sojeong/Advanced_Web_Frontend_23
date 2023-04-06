@@ -7,8 +7,6 @@ import Footer from '../components/footer';
 const InfoPage2 = () => {
         return <>
                 <Header />
-                <Component7 />
-                <Component8 />
                 <Footer />
         </>
 }
