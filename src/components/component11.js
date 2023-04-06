@@ -12,16 +12,16 @@ const Component11 = () => {
                                     <a href="https://www.paris.co.kr/bread-now/?cat=전체" data-slug="전체" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#023586", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box" }}>전체</a>
                                 </li>
                                 <li class="">
-                                    <a href="https://www.paris.co.kr/bread-now/?cat=breadcook" data-term_id="361" data-slug="breadcook" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box" }}>BREAD COOK</a>
+                                    <a href="https://www.paris.co.kr/bread-now/?cat=breadcook" data-term_id="361" data-slug="breadcook" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>News</a>
                                 </li>
                                 <li class="">
-                                    <a href="https://www.paris.co.kr/bread-now/?cat=breadstory" data-term_id="362" data-slug="breadstory" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box" }}>BREAD STORY</a>
+                                    <a href="https://www.paris.co.kr/bread-now/?cat=breadstory" data-term_id="362" data-slug="breadstory" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>BREAD STORY</a>
                                 </li>
                                 <li class="">
-                                    <a href="https://www.paris.co.kr/bread-now/?cat=breadvideo" data-term_id="8" data-slug="breadvideo" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box" }}>BREAD VIDEO</a>
+                                    <a href="https://www.paris.co.kr/bread-now/?cat=breadvideo" data-term_id="8" data-slug="breadvideo" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>BREAD VIDEO</a>
                                 </li>
                                 <li class="" >
-                                    <a href="https://www.paris.co.kr/bread-now/?cat=advertisement" data-term_id="10" data-slug="advertisement" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box" }}>광고</a>
+                                    <a href="https://www.paris.co.kr/bread-now/?cat=advertisement" data-term_id="10" data-slug="advertisement" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>광고</a>
                                 </li>
                             </ul>
                         </div>
