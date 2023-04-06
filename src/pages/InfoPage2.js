@@ -7,7 +7,7 @@ import Component10 from '../components/component10';
 const InfoPage2 = () => {
         return <>
                 <Header />
-                {/* <Component7/> */}
+                {/* <Component7 /> */}
                 <Component8 />
                 {/* <Component10/> */}
                 <Footer />
