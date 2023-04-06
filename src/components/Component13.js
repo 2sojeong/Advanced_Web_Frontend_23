@@ -28,7 +28,7 @@ const Component13 = () => {
                 <p style={{ lineHeight: "7px", fontSize: "18px" }}>고품질 바이오의약품 치료를 받을 수 있는 기회를 제공합니다</p>
                 <p></p>
                 <p style={{ marginTop: "50px" }}>
-                    <a style={{ fontSize: "14px" }} href="https://www.celltrion.com/ko-kr/Business/Self">Learn more
+                    <a style={{ fontSize: "14px", color: "#000", textDecoration: "none", }} href="https://www.celltrion.com/ko-kr/Business/Self">Learn more
                         <img style={{
                             verticalAlign: "middle",
                             paddingLeft: "10px"
