@@ -33,7 +33,6 @@ const MarketPage = () =>
             img3="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Enterprise-400x400?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;qlt=75&amp;wid=400&amp;hei=400"
             img4="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Education-400x400?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;qlt=75&amp;wid=400&amp;hei=400"
         />
-        <Component8 />
         <Component10 head='한 차원 높은 성능' contents={['프리미엄 기능과 원하는 방식으로 커스터마이징', '할 수 있는 기능으로 Mac 생산성을 한 차원 높여주세요.']} />
         <Component10 reverse={true} head='한 차원 높은 성능' contents={['프리미엄 기능과 원하는 방식으로 커스터마이징', '할 수 있는 기능으로 Mac 생산성을 한 차원 높여주세요.']} />
         <Footer />
