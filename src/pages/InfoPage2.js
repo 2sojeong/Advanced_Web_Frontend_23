@@ -10,7 +10,7 @@ import original from '../img/original.jpg'
 const InfoPage2 = () => {
         return <>
                 <Header />
-                <Component1 title1='Biotechnology' contents={['Biotechnology harnesses cellular and biomolecular processes to develop', 'technologies and products that help improve our lives and the health of our planet.']} />
+                <Component1 title1='Bio technology' contents={['Biotechnology harnesses cellular and biomolecular processes to develop', 'technologies and products that help improve our lives and the health of our planet.']} />
                 <Component2 head='BIO' contents={[' Biotechnology', 'Innovation Organization']} url="https://www.bio.org/" imgurl="https://www.hccs.edu/media/houston-community-college/district/images/0712021_Medical-Biotechnology_ATC_Large.jpg" />
                 <Component5 paddingRight='150px' head='What is Biotechnology?' content1='Biotechnology is technology based on biology.' content2='Using Biology to develop new products, methods and organisms' content3='intended to improve human health and society.' content4='Modern biotechnology provides' content5='breakthrough products and technologies.' img='https://www.northeastern.edu/graduate/blog/wp-content/uploads/2020/05/Biotechnology-Salaries.jpg' />
                 <br />
