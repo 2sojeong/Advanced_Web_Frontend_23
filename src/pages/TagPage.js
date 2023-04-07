@@ -19,7 +19,7 @@ const TagPage = () => {
 
     return <>
         <Header />
-        <Component11 />
+        <Component11 content1='전체' content2='News' content3='BREAD STORY' content4='BREAD VIDEO' content5='광고' link1='https://www.paris.co.kr/bread-now/?cat=전체' link2='https://www.paris.co.kr/bread-now/?cat=breadcook' link3="https://www.paris.co.kr/bread-now/?cat=breadstory" link4='https://www.paris.co.kr/bread-now/?cat=breadvideo' link5='https://www.paris.co.kr/bread-now/?cat=advertisement' />
         <Component12 data={postData} />
         <Footer />
     </>
