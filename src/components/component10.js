@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import React from 'react';
-import bannerImg from "../img/227_5.jpg";
 
 const Component10 = (props) => {
     let reverse = props.reverse
     if (reverse === undefined) {
         reverse = false
     }
-    const Img = () => <img style={{ width: '550px' }} src={bannerImg}></img>
-    const Content = () => <div style={{ margin: 'auto 0', marginLeft: reverse ? '0px' : '330px', marginRight: reverse ? '330px' : '0px' }}>
+    const Img = () => <img style={{ width: '550px' }} src={props.img}></img>
+    const Content = () => <div style={{
+        margin: 'auto 0', marginLeft: reverse ? (props.marginLeft === undefined ? '0px' : props.marginLeft) : (props.marginLeft === undefined ? '250px' : props.marginLeft), marginRight: reverse ? (props.marginRight === undefined ? '250px' : props.marginRight) : (props.marginRight === undefined ? '0px' : props.marginRight)
+    }}>
         <p style={{ fontWeight: 'bold', fontSize: '37px', margin: '0px 0px 10px 0px' }}>{props.head}</p>
         <p style={{ fontWeight: 'lighter', lineHeight: '30px', fontSize: '19px' }}>{props.contents.map((content) => <>{content}<br /></>)}</p>
     </div>

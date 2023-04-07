@@ -6,16 +6,16 @@ const Component5 = (props) => {
             <div style={{
                 display: 'flex',
                 justifyContent: 'center',
-                maxWidth: '1300px', margin: '50px auto', position: 'relative'
+                maxWidth: '1300px', margin: '80px auto', position: 'relative'
             }}>
 
                 <h2 style={{
                     margin: '0',
-                    paddingRight: '400px',
+                    paddingRight: props.paddingRight === undefined ? '300px' : props.paddingRight,
                     fontSize: '35px',
                     fontWeight: '600',
                     lineHeight: '1.18'
-                }}>Manifesto</h2>
+                }}>{props.head}</h2>
                 <div style={{ lineHeight: '30px' }} >
                     <b style={{ fontSize: '21px' }}>
                         {props.content1}
@@ -31,7 +31,7 @@ const Component5 = (props) => {
                     </p>
                 </div>
             </div>
-            <img src={props.img} style={{ margin: '60px auto', display: 'block', width: "1100px", borderRadius: '18px' }}></img>
+            <img src={props.img} style={{ margin: '60px auto', display: 'block', width: "1000px", height: "600px", borderRadius: '18px' }}></img>
 
         </>
     );

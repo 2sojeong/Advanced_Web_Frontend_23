@@ -28,7 +28,7 @@ const Component13 = (props) => {
                 <p style={{ lineHeight: "7px", fontSize: "18px" }}>{props.content2}</p>
                 <p></p>
                 <p style={{ marginTop: "50px" }}>
-                    <a style={{ fontSize: "14px", color: "#000", textDecoration: "none", }} href="https://www.celltrion.com/ko-kr/Business/Self"> {props.button}
+                    <a style={{ fontSize: "14px", color: "#000", textDecoration: "none", }} href={props.url}> {props.button}
                         <img style={{
                             verticalAlign: "middle",
                             paddingLeft: "10px"

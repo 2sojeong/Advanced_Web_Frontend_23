@@ -5,11 +5,11 @@ const Component4 = (props) => {
         <div class="component-intro component-intro--split component-intro--dark" style={{ fontFamily: "'KakaoBig',sans-serif", fontSize: "16", wordBreak: "keep-all", display: "block", color: "#191919", verticalAlign: "baseline" }}>
             <div class="wrap-middle" style={{ margin: "0 auto ", width: '1300px', position: "relative", display: "block" }}>
                 <div class="component-intro__inner" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", columnGap: "10", minHeight: "470px", tableLayout: "fixed", width: "100%", position: "relative" }}>
-                    <div class="component-intro__info" style={{ margin: "0 5px 0 0", display: "flex", borderRadius: "20px", width: "auto", fontSize: "16px", verticalAlign: "middle", position: "relative", background: "#0082FF", paddingLeft: "108", paddingRight: "108px", paddingTop: "0", paddingBottom: "0", padding: "0px 100px 0px 100px", overflow: "hidden" }}>
+                    <div class="component-intro__info" style={{ margin: "0 5px 0 0", display: "flex", borderRadius: "20px", width: "auto", fontSize: "16px", verticalAlign: "middle", position: "relative", background: props.color, paddingLeft: "108", paddingRight: "108px", paddingTop: "0", paddingBottom: "0", padding: "0px 100px 0px 100px", overflow: "hidden" }}>
                         <div class="component-intro__info-inner" style={{ alignSelf: "center", display: "block" }}>
-                            <span class="component-intro__label" style={{ color: "#FFFFFF", display: "block", fontSize: "15px", lineHeight: "1.87", fontWeight: "600", letterSpacing: "-2px" }}>{props.head}</span>
-                            <h2 class="component-intro__title" style={{ color: "#FFFFFF", fontSize: "30px", fontWeight: "600", letterSpacing: "-4px", marginTop: "10px", marginBottom: "0" }}>{props.title}</h2>
-                            <p class="component-into__desc" style={{ color: "rgba(255,255,255,.7)", marginTop: "17", fontSize: "15px", lineHeight: "1.87", fontWeight: "400", letterSpacing: "-2px", display: "block" }}>
+                            <span class="component-intro__label" style={{ color: "#FFFFFF", display: "block", fontSize: "15px", lineHeight: "1.87", fontWeight: "600", letterSpacing: "-1px" }}>{props.head}</span>
+                            <h2 class="component-intro__title" style={{ color: "#FFFFFF", fontSize: "30px", fontWeight: "600", letterSpacing: "-1px", marginTop: "10px", marginBottom: "0" }}>{props.title}</h2>
+                            <p class="component-into__desc" style={{ color: "rgba(255,255,255,.7)", marginTop: "17", fontSize: "15px", lineHeight: "1.87", fontWeight: "400", letterSpacing: "-1px", display: "block" }}>
                                 {props.content1}
                             </p>
 
@@ -35,8 +35,6 @@ const Component4 = (props) => {
                             <div class="component-intro__bg-image" style={{ margin: "0 0 0 5px", height: "100%" }}>
                                 <img src={props.image1} style={{ borderRadius: "20px", width: "100%", height: "100%", background: "center", backgroundSize: "cover", display: "block" }}></img></div>
 
-                            <div class="component-intro__bg-option">
-                                <img src={props.image2} style={{ width: "425px", height: "425px", position: "absolute", right: "-35px", bottom: "0", background: "center", backgroundSize: "cover", verticalAlign: "baseline", display: "block" }}></img></div>
 
                         </div>
                     </div>

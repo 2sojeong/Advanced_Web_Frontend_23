@@ -7,12 +7,12 @@ const Component2 = (props) => {
                 <img style={{ height: '400px', width: '100%', maxHeight: '570px', maxWidth: '100%', objectFit: 'cover', verticalAlign: 'top' }} loading="lazy" src={props.imgurl} width="1440" height="380" alt="" />
             </picture>
         </figure>
-        <div style={{ maxWidth: '1100px', width: '100%', position: 'absolute', padding: '0', top: 'calc(50% - 110px)', left: 'calc(50% - 700px)', color: '#ffffff' }} >
+        <div style={{ maxWidth: '1100px', width: '100%', position: 'absolute', padding: '0', top: 'calc(50% - 110px)', left: 'calc(50% - 600px)', color: '#ffffff' }} >
             <div style={{ fontSize: '30px', fontWeight: '700', marginBottom: '10px' }} >{props.head}</div>
             <div style={{ fontSize: '40px', fontWeight: '700' }} >{props.contents.map((content) => <>{content}<br /></>)}</div>
 
             <div >
-                <a style={{ padding: '0 20px', marginTop: '20px', height: '40px', display: 'inline-flex', lineHeight: '40px', fontWeight: '800', textDecoration: 'none', borderRadius: '20px', fontSize: '14px', backgroundColor: '#ffffff', color: '#000000' }} href="/kr/careers/" data-an-tr="body contents" data-an-ca="link click" data-an-ac="더 알아보기" data-an-la="career banner">더 알아보기</a>
+                <a style={{ padding: '0 20px', marginTop: '20px', height: '40px', display: 'inline-flex', lineHeight: '40px', fontWeight: '800', textDecoration: 'none', borderRadius: '20px', fontSize: '14px', backgroundColor: '#ffffff', color: '#000000' }} href={props.url} data-an-tr="body contents" data-an-ca="link click" data-an-ac="Learn more" data-an-la="career banner">Learn more</a>
             </div>
         </div>
     </div>
