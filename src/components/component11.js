@@ -1,6 +1,6 @@
 import React from "react";
 
-const Component11 = () => {
+const Component11 = (props) => {
     return (
         <>
             <div class="filters" style={{ boxSizing: "border-box", marginTop: "10px", boxShadow: "0 1px 1px 0 rgba(0,0,0, .1)", background: "#fff" }}>
@@ -9,19 +9,19 @@ const Component11 = () => {
                         <div class="container" style={{ textAlign: "center", boxSizing: "border-box", maxWidth: "1420px", padding: "0px 25px", position: "relative", margin: "0 auto", verticalAlign: "baseline" }}>
                             <ul style={{ listStyle: "none", padding: 0, whiteSpace: "nowrap", margin: 0, boxSizing: "borderBox", justifyContent: "center", display: "flex" }}>
                                 <li class="active">
-                                    <a href="https://www.paris.co.kr/bread-now/?cat=전체" data-slug="전체" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#023586", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box" }}>전체</a>
+                                    <a href={props.link1} data-slug="전체" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#023586", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box" }}>{props.content1}</a>
                                 </li>
                                 <li class="">
-                                    <a href="https://www.paris.co.kr/bread-now/?cat=breadcook" data-term_id="361" data-slug="breadcook" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>News</a>
+                                    <a href={props.link2} data-term_id="361" data-slug="breadcook" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>{props.content2}</a>
                                 </li>
                                 <li class="">
-                                    <a href="https://www.paris.co.kr/bread-now/?cat=breadstory" data-term_id="362" data-slug="breadstory" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>BREAD STORY</a>
+                                    <a href={props.link3} data-term_id="362" data-slug="breadstory" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>{props.content3}</a>
                                 </li>
                                 <li class="">
-                                    <a href="https://www.paris.co.kr/bread-now/?cat=breadvideo" data-term_id="8" data-slug="breadvideo" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>BREAD VIDEO</a>
+                                    <a href={props.link4} data-term_id="8" data-slug="breadvideo" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>{props.content4}</a>
                                 </li>
                                 <li class="" >
-                                    <a href="https://www.paris.co.kr/bread-now/?cat=advertisement" data-term_id="10" data-slug="advertisement" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>광고</a>
+                                    <a href={props.link5} data-term_id="10" data-slug="advertisement" style={{ fontSize: "20px", padding: "18px 16px", display: "blocK", fontWeight: "500", color: "#888", position: "relative", transition: "color .3s ease-out", boxShadow: "none", textDecoration: "none", boxSizing: "border-box", textTransform: 'uppercase' }}>{props.content5}</a>
                                 </li>
                             </ul>
                         </div>

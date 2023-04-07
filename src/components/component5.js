@@ -1,9 +1,8 @@
 import React from "react";
-import bannerImg from "../img/227_5.jpg";
-const Component5 = () => {
+
+const Component5 = (props) => {
     return (
         <>
-
             <div style={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -19,20 +18,20 @@ const Component5 = () => {
                 }}>Manifesto</h2>
                 <div style={{ lineHeight: '30px' }} >
                     <b style={{ fontSize: '21px' }}>
-                        우리는 꿈을 현실로 만드는 여정에 함께하는 동반자들이다.
+                        {props.content1}
                         <br />
-                        우리는 사람들이 자신의 꿈을 실현하는 것을 도움으로써
+                        {props.content2}
                         <br />
-                        더 나은 세상을 만드는데 기여한다.
+                        {props.content3}
                     </b>
                     <p style={{ fontSize: '19px', marginTop: '30px' }}>
-                        기술과 서비스,
+                        {props.content4}
                         <br />
-                        그리고 혁신적인 아이디어로 우리 모두의 꿈을 현실로 만듭니다.
+                        {props.content5}
                     </p>
                 </div>
             </div>
-            <img src={bannerImg} style={{ margin: '60px auto', display: 'block', width: "1100px", borderRadius: '18px' }}></img>
+            <img src={props.img} style={{ margin: '60px auto', display: 'block', width: "1100px", borderRadius: '18px' }}></img>
 
         </>
     );
