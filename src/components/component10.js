@@ -6,7 +6,7 @@ const Component10 = (props) => {
     if (reverse === undefined) {
         reverse = false
     }
-    const Img = () => <img style={{ width: '550px' }} src={props.img}></img>
+    const Img = () => <img style={{ width: '550px', aspectRatio: ' 476 / 230', objectFit: 'cover', overflow: 'hidden' }} src={props.img}></img>
     const Content = () => <div style={{
         margin: 'auto 0', marginLeft: reverse ? (props.marginLeft === undefined ? '0px' : props.marginLeft) : (props.marginLeft === undefined ? '250px' : props.marginLeft), marginRight: reverse ? (props.marginRight === undefined ? '250px' : props.marginRight) : (props.marginRight === undefined ? '0px' : props.marginRight)
     }}>

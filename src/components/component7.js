@@ -111,7 +111,7 @@ const Component7 = (props) => {
 
                                                                 <a data-bi-cn="Education" data-bi-ecn="교육" data-bi-ct="cta" data-bi-pa="body" data-bi-bhvr="230" data-bi-tags="{&quot;BiLinkName&quot;:&quot;Education&quot;}" class="cta    " style={{ textDecoration: "none" }} data-target={props.link4} aria-label="Teams의 교육 옵션입니다." target="_self" href={props.link4}>
                                                                     <span style={{ boxSizing: "border-box", color: "#FFFFFF", fontWeight: "600", cursor: "pointer", fontSize: "17px" }}>
-                                                                        교육
+                                                                        {props.bar4}
                                                                     </span>
                                                                 </a>
                                                             </div>
