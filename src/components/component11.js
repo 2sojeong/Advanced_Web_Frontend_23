@@ -4,7 +4,7 @@ import React from "react";
 const Component11 = (props) => {
     const selectTag = (postData, content) => {
         content = content.toLowerCase()
-        if (content === "all tags") {
+        if (content === "all") {
             return postData
         }
         return postData.filter((item, index) => {

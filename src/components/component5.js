@@ -3,7 +3,7 @@ import React from "react";
 const Component5 = (props) => {
     return (
         <>
-            <div style={{
+            <div id={props.id} style={{
                 display: 'flex',
                 justifyContent: 'center',
                 maxWidth: '1300px', margin: '80px auto', position: 'relative'

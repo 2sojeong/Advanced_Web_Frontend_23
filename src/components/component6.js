@@ -1,14 +1,14 @@
 import React from "react";
 
 const Component6 = (propss) => {
-    const ImageBox = (props) => <> <div style={{ left: '50%', transform: 'translate(-50%)', margin: '0 auto', width: '65%', textAlign: 'center', position: 'absolute', height: '50px', display: 'inline-block', lineHeight: '53px', fontWeight: '700', borderRadius: '100px', fontSize: '25px', backgroundColor: '#0055FF', color: '#ffffff', zIndex: '100' }} >{props.imgheader}</div>
+    const ImageBox = (props) => <> <div style={{ left: '50%', transform: 'translate(-50%)', margin: '0 auto', width: '65%', textAlign: 'center', position: 'absolute', height: '50px', display: 'inline-block', lineHeight: '53px', fontWeight: '700', borderRadius: '100px', fontSize: '25px', backgroundColor: '#0055FF', boxShadow: '5px 5px 5px rgba(0, 0, 0, 0.5)', color: '#ffffff', zIndex: '100' }} >{props.imgheader}</div>
         <div style={{ paddingTop: '30px', position: 'relative', boxSizing: 'border-box', display: 'block', width: '100%', margin: '0px' }} >
             <img style={{ aspectRatio: ' 476 / 250', width: '100%', objectFit: 'cover', borderRadius: '20px', overflow: 'hidden' }} src={props.imgurl} alt="" />
         </div>
     </>
     return (
         <>
-            <div style={{ marginTop: '80px', maxWidth: '1250px', minHeight: '700px', marginRight: "auto", marginLeft: "auto", padding: '20px', border: '0', boxSizing: 'border-box', display: 'block', verticalAlign: 'baseline' }} >
+            <div id={propss.id} style={{ marginTop: '80px', maxWidth: '1250px', minHeight: '700px', marginRight: "auto", marginLeft: "auto", padding: '20px', border: '0', boxSizing: 'border-box', display: 'block', verticalAlign: 'baseline' }} >
 
                 <div style={{ float: 'none', width: '100%' }} >
                     <ul style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: '50px', listStyle: 'none' }} >

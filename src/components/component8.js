@@ -8,7 +8,7 @@ const Component8 = (propss) => {
             btagString = tags.join(' #');
         }
         return <>
-            <div style={{ position: "relative", width: "100%" }}>
+            <div id={propss.id} style={{ position: "relative", width: "100%" }}>
                 <a>
                     <div style={{ width: "100%", height: "100%", overFlow: "hidden" }}>
                         <div>
@@ -66,9 +66,9 @@ const Component8 = (propss) => {
                     marginBottom: "10px", display: "block", content: ''
                 }}></span>
                 <p style={{ fontSize: "20px", textAlign: "center" }}>{propss.title2}</p>
-                <div className="thmb_list02" style={{ width: "100%", paddingTop: "30px", width: "1280px", display: "table", marginRight: "auto", marginLeft: "auto", position: "relative", marginBottom: "20px" }}>
-                    <div className="list_area" style={{ width: "100%", display: "table" }}>
-                        <div className="item_big" style={{
+                <div style={{ width: "100%", paddingTop: "30px", width: "1280px", display: "table", marginRight: "auto", marginLeft: "auto", position: "relative", marginBottom: "20px" }}>
+                    <div style={{ width: "100%", display: "table" }}>
+                        <div style={{
                             float: "left", width: "620px", marginRight: "40px",
                             verticalAlign: "top", paddingTop: "15px", paddingBottom: "15px", minHeight: "550px"
                         }}>
@@ -77,7 +77,7 @@ const Component8 = (propss) => {
                             })}
 
                         </div>
-                        <div className="item" style={{
+                        <div style={{
                             float: "left", width: "300px", minHeight: "300px", marginRight: "20px", verticalAlign: "top",
                             paddingTop: "15px", paddingBottom: "15px"
                         }}>
@@ -85,7 +85,7 @@ const Component8 = (propss) => {
                                 return <Context imgurl={item.imgurl} tags={item.tag} name={item.name} />
                             })}
                         </div>
-                        <div className="item" style={{
+                        <div style={{
                             float: "left", width: "300px", minHeight: "300px", verticalAlign: "top",
                             paddingTop: "15px", paddingBottom: "15px"
                         }}>
@@ -93,12 +93,12 @@ const Component8 = (propss) => {
                                 return <Context imgurl={item.imgurl} tags={item.tag} name={item.name} />
                             })}
                         </div>
-                        <div className="item big no6" style={{ float: "right" }}>
+                        <div style={{ float: "right" }}>
                             {propss.data[5].map((item, index) => {
                                 return <Contextbig imgurl={item.imgurl} tags={item.tag} name={item.name} />
                             })}
                         </div>
-                        <div className="item" style={{
+                        <div style={{
                             float: "left", width: "300px", minHeight: "300px", marginRight: "20px", verticalAlign: "top",
                             paddingTop: "15px", paddingBottom: "15px"
                         }}>
@@ -106,7 +106,7 @@ const Component8 = (propss) => {
                                 return <Context imgurl={item.imgurl} tags={item.tag} name={item.name} />
                             })}
                         </div>
-                        <div className="item" style={{
+                        <div style={{
                             float: "left", width: "300px", minHeight: "300px", marginRight: "20px", verticalAlign: "top",
                             paddingTop: "15px", paddingBottom: "15px"
                         }} >
