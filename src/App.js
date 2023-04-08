@@ -1,11 +1,11 @@
 
 import { Routes, Route } from "react-router-dom";
 import MainPage from "./pages/MainPage";
-import { TagPage } from './pages/TagPage';
+import {NewsPage} from "./pages/NewsPage";
 import InfoPage1 from './pages/InfoPage1';
 import InfoPage2 from './pages/InfoPage2';
 import InfoPage3 from './pages/InfoPage3';
-import MarketPage from "./pages/MarketPage";
+import { MarketPage } from "./pages/MarketPage";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Route
         path="/tag"
         element={
-          <TagPage />
+          <NewsPage />
         }
       />
       <Route
