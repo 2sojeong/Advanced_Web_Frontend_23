@@ -70,7 +70,7 @@ const Component7 = (props) => {
                                                         </div>
                                                     </div>
                                                     <div class="w-100 h-100" style={{ width: "100%", height: "100%", boxSizing: "border-box", display: "block" }}>
-                                                        <img class="img-fluid img-object-cover  blur-up lazyloaded" alt="" style={{ filter: "blur(0)", opacity: 1, transition: "opacity 300ms", objectFit: "cover", height: "100%", width: "100%", maxWidth: "100%", verticalAlign: "middle", boxSizing: "border-box", overflowClipMargin: "content-box", overflow: "clip" }} data-srcset="" data-src={props.img2} srcset={props.img2} src={props.img2}>
+                                                        <img class="img-fluid img-object-cover  blur-up lazyloaded" alt="" style={{ filter: "blur(0)", opacity: 1, transition: "opacity 300ms", objectFit: "cover", height: "100%", width: "100%", maxWidth: "100%", verticalAlign: "middle", boxSizing: "border-box", overflowClipMargin: "content-box", overflow: "clip" }} data-srcset={props.img2} data-src={props.img2} srcset={props.img2}>
                                                         </img>
                                                     </div>
                                                 </div>
@@ -111,7 +111,7 @@ const Component7 = (props) => {
 
                                                                 <a data-bi-cn="Education" data-bi-ecn="교육" data-bi-ct="cta" data-bi-pa="body" data-bi-bhvr="230" data-bi-tags="{&quot;BiLinkName&quot;:&quot;Education&quot;}" class="cta    " style={{ textDecoration: "none" }} data-target={props.link4} aria-label="Teams의 교육 옵션입니다." target="_self" href={props.link4}>
                                                                     <span style={{ boxSizing: "border-box", color: "#FFFFFF", fontWeight: "600", cursor: "pointer", fontSize: "17px" }}>
-                                                                        교육
+                                                                        {props.bar4}
                                                                     </span>
                                                                 </a>
                                                             </div>
