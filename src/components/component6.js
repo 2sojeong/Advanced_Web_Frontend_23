@@ -1,8 +1,8 @@
 import React from "react";
 
 const Component6 = (propss) => {
-    const ImageBox = (props) => <> <div style={{ left: '50%', transform: 'translate(-50%)', margin: '0 auto', width: '65%', textAlign: 'center', position: 'absolute', height: '50px', display: 'inline-block', lineHeight: '53px', fontWeight: '700', borderRadius: '100px', fontSize: '25px', backgroundColor: '#008000', color: '#ffffff', zIndex: '100' }} >{props.imgheader}</div>
-        <div style={{ paddingTop: '25px', position: 'relative', boxSizing: 'border-box', display: 'block', width: '100%', margin: '0px' }} >
+    const ImageBox = (props) => <> <div style={{ left: '50%', transform: 'translate(-50%)', margin: '0 auto', width: '65%', textAlign: 'center', position: 'absolute', height: '50px', display: 'inline-block', lineHeight: '53px', fontWeight: '700', borderRadius: '100px', fontSize: '25px', backgroundColor: '#0055FF', color: '#ffffff', zIndex: '100' }} >{props.imgheader}</div>
+        <div style={{ paddingTop: '30px', position: 'relative', boxSizing: 'border-box', display: 'block', width: '100%', margin: '0px' }} >
             <img style={{ aspectRatio: ' 476 / 250', width: '100%', objectFit: 'cover', borderRadius: '20px', overflow: 'hidden' }} src={props.imgurl} alt="" />
         </div>
     </>

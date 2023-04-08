@@ -12,12 +12,12 @@ const Component8 = (propss) => {
                 <a>
                     <div style={{ width: "100%", height: "100%", overFlow: "hidden" }}>
                         <div>
-                            <img src={props.imgurl} alt style={{ width: "620px", height: "435px", verticalAlign: "top", border: "0" }}></img>
+                            <img src={props.imgurl} alt style={{ objectFit: 'contain', width: "620px", height: "435px", verticalAlign: "top", border: "0" }}></img>
                         </div>
                     </div>
                 </a>
             </div>
-            <div style={{ paddingTop: "30px", paddingBottom: "10px", backgroundColor: propss.bgColor }}>
+            <div style={{ paddingTop: "20px", paddingBottom: "10px", backgroundColor: propss.bgColor, }}>
                 <div style={{ minHeight: "25px", marginLeft: "20px", width: "90%" }}>
                     <span style={{ color: "#666", fontSize: "16px", marginRight: "8px" }}>#{btagString}</span>
                 </div>
@@ -40,7 +40,7 @@ const Component8 = (propss) => {
                 <a>
                     <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
                         <div>
-                            <img src={props.imgurl} alt style={{ width: "305px", height: "215px", verticalAlign: "top", border: "0" }}></img>
+                            <img src={props.imgurl} alt style={{ objectFit: 'contain', width: "305px", height: "215px", verticalAlign: "top", border: "0" }}></img>
                         </div>
                     </div>
                 </a>

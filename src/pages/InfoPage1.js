@@ -47,7 +47,7 @@ const InfoPage1 = () => {
                         img4={controlled}
                 />
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <Component8 bgColor="#9CF" title1='Major Medicines' title2='Experience a definite effect with the major medicine suggested by SoonYeol BIO' data={[Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6]} />
+                <Component8 bgColor="#B8DFF8" title1='Major Medicines' title2='Experience a definite effect with the major medicine suggested by SoonYeol BIO' data={[Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6]} />
                 <br /><br /><br />
                 <Component2 head='Medicine' contents={['Small but big power', 'healing your body']} url="https://www.drugs.com/alpha/a.html" imgurl={family} />
                 <Footer />
