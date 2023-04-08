@@ -18,8 +18,10 @@ const Footer = () => {
                 <p style={{ ...infostyle, display: 'inline-block' }}>(주)순두부열라면바이오</p>
                 <p style={{ ...infostyle }}>경기도 성남시 수정구 성남대로 1342</p>
                 <p style={{ ...infostyle }}>2023 가천대학교 고급웹프로그래밍 팀프로젝트 - React</p>
-                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: `url(${call}) no-repeat center / cover', marginRight: '5px` }} />031-750-8659</p>
-                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: `url(${mail}) no-repeat center / cover', marginRight: '5px` }} />swdm@gachon.ac.kr</p>
+                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{
+                    display: 'inline-block', width: '14px', height: '12px', background: `url(${call}) no-repeat center / cover`, marginRight: '5px'
+                }} />031-750-8659</p>
+                < p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: `url(${mail}) no-repeat center / cover`, marginRight: '5px' }} />swdm@gachon.ac.kr</p>
             </div>
             <div style={{ display: 'grid', width: '50%', gridTemplateColumns: 'repeat(4, auto)', gap: '20px', margin: 0, padding: 0 }}>
                 <ul style={ulstyle}>
