@@ -8,7 +8,7 @@ const Component10 = (props) => {
     }
     const Img = () => <img style={{ width: '550px', aspectRatio: ' 476 / 230', objectFit: 'cover', overflow: 'hidden' }} src={props.img}></img>
     const Content = () => <div style={{
-        width:'550px',margin: 'auto 0', marginLeft: reverse ? (props.marginLeft === undefined ? '0px' : props.marginLeft) : (props.marginLeft === undefined ? '250px' : props.marginLeft), marginRight: reverse ? (props.marginRight === undefined ? '250px' : props.marginRight) : (props.marginRight === undefined ? '0px' : props.marginRight)
+        width:'450px',margin: 'auto 0', marginLeft: reverse ? (props.marginLeft === undefined ? '0px' : props.marginLeft) : (props.marginLeft === undefined ? '250px' : props.marginLeft), marginRight: reverse ? (props.marginRight === undefined ? '250px' : props.marginRight) : (props.marginRight === undefined ? '0px' : props.marginRight)
     }}>
         <p style={{ fontWeight: 'bold', fontSize: '37px', margin: '0px 0px 10px 0px' }}>{props.head}</p>
         <p style={{ fontWeight: 'lighter', lineHeight: '30px', fontSize: '19px' }}>{props.contents.map((content) => <>{content}<br /></>)}</p>
