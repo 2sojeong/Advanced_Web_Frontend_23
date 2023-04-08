@@ -7,14 +7,27 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 
 import medicine from "../img/medicine.png";
+
+import general from "../img/general.jpg"
+import pharmacy from "../img/pharmacy.jpg"
+import prescription from "../img/prescription.jpg"
+import controlled from "../img/controlled.jpg"
+
+import strepsils from "../img/strepsils.jpg"
+import tylenol from "../img/tylenol.jpg"
+import claritin from "../img/claritin.png"
+import centrum from "../img/centrum.jpg"
+import quil from "../img/quil.jpg"
+import pepto from "../img/pepto.png"
 import family from "../img/family.jpg"
 
-const Com8data1 = [{ imgurl: "https://static.chemistwarehouse.com.au/ams/media/pi/53953/3DF_800.jpg", tag: ['Sore throat', 'Anti-inflammatory', 'Cough drop'], name: 'Strepsils' }]
-const Com8data2 = [{ imgurl: "https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dwb75365e3/products/L2711257/large/L2711257.JPG", tag: ['Pain relief', 'Fever reducer', 'Very safe'], name: 'Tylenol' }]
-const Com8data3 = [{ imgurl: "https://www.clarityne.co.kr/sites/g/files/vrxlpx30401/files/2019-12/base-tablets-hero-front.png?imwidth=5000", tag: ['Allergy', 'Once a day', '24hour'], name: 'Claritin' }]
-const Com8data4 = [{ imgurl: "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/bp-wellness-centrum/en_US/sliced-images/global/products/Bottle%20of%20Centrum%20Multigummies%20Adults%20vitamins.jpg?auto=format", tag: ['Multivitamins', 'Nutrients', 'Miscellaneous'], name: 'Centrum' }]
-const Com8data5 = [{ imgurl: "https://i5.walmartimages.ca/images/Large/863/162/863162.jpg", tag: ['Cold', 'Flu', 'Daytime & Night'], name: 'DayQuil & NyQuil' }]
-const Com8data6 = [{ imgurl: "https://images.ctfassets.net/bhbc4e60kzbl/1MWHvi08Om81M4RBWPa46H/56b7077a33366e759614fa8891df6d18/00056100003489_C1N1_CA-PR-US__1_.png", tag: ['Stomachache', 'Anti-diarrhea', 'Cherry-flavored'], name: 'Pepto bismol ' }]
+
+const Com8data1 = [{ imgurl: strepsils, tag: ['Sore throat', 'Anti-inflammatory', 'Cough drop'], name: 'Strepsils' }]
+const Com8data2 = [{ imgurl: tylenol, tag: ['Pain relief', 'Fever reducer', 'Very safe'], name: 'Tylenol' }]
+const Com8data3 = [{ imgurl: claritin, tag: ['Allergy', 'Once a day', '24hour'], name: 'Claritin' }]
+const Com8data4 = [{ imgurl: centrum, tag: ['Multivitamins', 'Nutrients', 'Miscellaneous'], name: 'Centrum' }]
+const Com8data5 = [{ imgurl: quil, tag: ['Cold', 'Flu', 'Daytime & Night'], name: 'DayQuil & NyQuil' }]
+const Com8data6 = [{ imgurl: pepto, tag: ['Stomachache', 'Anti-diarrhea', 'Cherry-flavored'], name: 'Pepto bismol ' }]
 
 const InfoPage1 = () => {
         return <>
@@ -29,10 +42,10 @@ const InfoPage1 = () => {
                         link2="https://lloydspharmacy.com/blogs/prescriptions/pharmacy-medicines"
                         link3="https://en.wikipedia.org/wiki/Prescription_drug"
                         link4="https://en.wikipedia.org/wiki/Controlled_substance"
-                        img1={'https://alphabodymedicalcenter.com/wp-content/uploads/2021/08/General-medicine.jpg'}
-                        img2='https://www.felixhospital.com/sites/default/files/2022-11/best-pharmacy-services-hospital-in-noida.jpg'
-                        img3={"https://www.knowleswellness.com/wp-content/uploads/2021/08/Filling-perscription.jpg"}
-                        img4="https://media.sciencephoto.com/c0/47/19/78/c0471978-800px-wm.jpg"
+                        img1={general}
+                        img2={pharmacy}
+                        img3={prescription}
+                        img4={controlled}
                 />
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <Component8 bgColor="#9CF" title1='Major Medicines' title2='Experience a definite effect with the major medicine suggested by SoonYeol BIO' data={[Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6]} />
