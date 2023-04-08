@@ -3,7 +3,9 @@ import Component11 from '../components/component11';
 import Component12 from '../components/component12';
 import Footer from '../components/footer';
 import Component8 from '../components/component8';
+import Component1 from '../components/component1';
 import { useState } from 'react';
+
 const postData = [{ gourl: 'https://www.biotimes.co.kr/news/articleView.html?idxno=6415', imgurl: 'https://www.biotimes.co.kr/news/photo/202108/6415_6332_4528.jpg', tag: ['Policy'], title: '2025년까지 백신 5대 강국으로 만들기 위해 2.2조 투입된다' },
 { gourl: 'https://www.biotimes.co.kr/news/articleView.html?idxno=5103', imgurl: 'https://www.biotimes.co.kr/news/photo/202101/5103_4744_595.jpg', tag: ['Policy', 'Medical'], title: 'AI 기반 신약개발 특허 신청·획득 쉬워진다' },
 { gourl: 'https://www.yakup.com/news/index.html?mode=view&cat=11&nid=280359', imgurl: 'https://www.yakup.com/data/editor/news/202304/an9fKN7fu2hyKjZLF7yGlKCZw.jpg', tag: ['Medical', 'Issues',], title: '신약개발 R&D, 10년간 ‘인프라‧신약‧감염증’에 4조원 투자' },
@@ -47,9 +49,15 @@ const TagPage = () => {
         const [selectTag, setSelectTag] = useState('ALL')
         return <>
                 <Header />
+                <Component1 title1='Bio News' contents={['Provides the latest bio-related news.','Learn about policies, forums and events, constraints, and the latest issues.']}/>
+                <br/>
+                <Component11 content1='전체' content2='POLICY' content3='FOURM' content4='ISSUES' content5='MEDICAL' link1='https://www.paris.co.kr/bread-now/?cat=전체' link2='https://www.paris.co.kr/bread-now/?cat=breadcook' link3="https://www.paris.co.kr/bread-now/?cat=breadstory" link4='https://www.paris.co.kr/bread-now/?cat=breadvideo' link5='https://www.paris.co.kr/bread-now/?cat=advertisement' />
+                <Component12 data={postData} />
+                <Component8 title1='추천레시피' title2='오뚜기가 ~~ 뭐시기' data={[Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6]} />
                 <Component11 tag={{ 'postData': postData, 'setTagData': setTagData, 'setSelectTag': setSelectTag, 'selectTag': selectTag }} categoryTitle={['ALL', 'POLICY', 'Forum', 'ISSUES', 'MEDICAL']} />
                 <Component12 data={tagData} />
                 <Component8 bgColor="#ffed93" title1='추천레시피' title2='오뚜기가 ~~ 뭐시기' data={[Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6]} />
+
                 <Footer />
         </>
 }
