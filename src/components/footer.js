@@ -26,7 +26,42 @@ const Footer = () => {
             <div style={{ display: 'grid', width: '50%', gridTemplateColumns: 'repeat(4, auto)', gap: '20px', margin: 0, padding: 0 }}>
                 <ul style={ulstyle}>
                     <span style={spanstyle}>
-                        Compnay
+                        Members
+                    </span>
+                    <li style={listSyle}>
+                        <div style={{ display: 'flex' }}>
+                            <p style={{ ...linkstyle, width: '70px', margin: '0', padding: '0' }}>202033868</p>
+                            <p style={{ ...linkstyle, width: '45px', margin: '0', padding: '0' }}>이소정</p>
+                        </div>
+                    </li>
+                    <li style={listSyle}>
+                        <div style={{ display: 'flex' }}>
+                            <p style={{ ...linkstyle, width: '70px', margin: '0', padding: '0' }}>202135512</p>
+                            <p style={{ ...linkstyle, width: '45px', margin: '0', padding: '0' }}>김미소</p>
+                        </div>
+                    </li>
+                    <li style={listSyle}>
+                        <div style={{ display: 'flex' }}>
+                            <p style={{ ...linkstyle, width: '70px', margin: '0', padding: '0' }}>202135577</p>
+                            <p style={{ ...linkstyle, width: '45px', margin: '0', padding: '0' }}>정민규</p>
+                        </div>
+                    </li>
+                    <li style={listSyle}>
+                        <div style={{ display: 'flex' }}>
+                            <p style={{ ...linkstyle, width: '70px', margin: '0', padding: '0' }}>202135588</p>
+                            <p style={{ ...linkstyle, width: '45px', margin: '0', padding: '0' }}>최지우</p>
+                        </div>
+                    </li>
+                    <li style={listSyle}>
+                        <div style={{ display: 'flex' }}>
+                            <p style={{ ...linkstyle, width: '70px', margin: '0', padding: '0' }}>202135600</p>
+                            <p style={{ ...linkstyle, width: '45px', margin: '0', padding: '0' }}>황채연</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul style={ulstyle}>
+                    <span style={spanstyle}>
+                        Medicine
                     </span>
                     <li style={listSyle}>
                         <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
@@ -43,7 +78,7 @@ const Footer = () => {
                 </ul>
                 <ul style={ulstyle}>
                     <span style={spanstyle}>
-                        Compnay
+                        BioTech
                     </span>
                     <li style={listSyle}>
                         <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
@@ -60,24 +95,7 @@ const Footer = () => {
                 </ul>
                 <ul style={ulstyle}>
                     <span style={spanstyle}>
-                        Compnay
-                    </span>
-                    <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
-                    </li>
-                    <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
-                    </li>
-                    <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
-                    </li>
-                    <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
-                    </li>
-                </ul>
-                <ul style={ulstyle}>
-                    <span style={spanstyle}>
-                        Compnay
+                        HealthCare
                     </span>
                     <li style={listSyle}>
                         <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
