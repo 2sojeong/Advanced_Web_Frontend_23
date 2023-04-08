@@ -5,7 +5,7 @@ import { TagPage } from './pages/TagPage';
 import InfoPage1 from './pages/InfoPage1';
 import InfoPage2 from './pages/InfoPage2';
 import InfoPage3 from './pages/InfoPage3';
-import MarketPage from "./pages/MarketPage";
+import { MarketPage } from "./pages/MarketPage";
 
 function App() {
   return (

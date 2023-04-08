@@ -2,9 +2,9 @@ import Header from '../components/header';
 import Component11 from '../components/component11';
 import Component12 from '../components/component12';
 import Footer from '../components/footer';
-import Component8 from '../components/component8';
 import Component1 from '../components/component1';
 import { useState } from 'react';
+import bannerImg from '../img/info_3_1.jpg';
 
 const postData = [{ gourl: 'https://www.biotimes.co.kr/news/articleView.html?idxno=6415', imgurl: 'https://www.biotimes.co.kr/news/photo/202108/6415_6332_4528.jpg', tag: ['Policy'], title: '2025년까지 백신 5대 강국으로 만들기 위해 2.2조 투입된다' },
 { gourl: 'https://www.biotimes.co.kr/news/articleView.html?idxno=5103', imgurl: 'https://www.biotimes.co.kr/news/photo/202101/5103_4744_595.jpg', tag: ['Policy', 'Medical'], title: 'AI 기반 신약개발 특허 신청·획득 쉬워진다' },
@@ -31,17 +31,11 @@ const postData = [{ gourl: 'https://www.biotimes.co.kr/news/articleView.html?idx
 { gourl: 'https://www.biotimes.co.kr/news/articleView.html?idxno=10163', imgurl: 'https://www.biotimes.co.kr/news/photo/202303/10163_12498_1859.png', tag: ['Forum'], title: '산업교육연구소, ‘디지털 바이오 정책지원과 혁신 기술 동향 및 개발 성공사례’ 세미나 개최' },
 { gourl: 'https://www.medicaltimes.com/Main/News/NewsView.html?ID=1152334', imgurl: 'https://pds.medicaltimes.com/NewsPhoto/20230228/1677554756.jpg', tag: ['Medical',], title: '복지부 "5년안에 블록버스터급 신약 2개 개발하겠다"' },
 { gourl: 'https://www.medicaltimes.com/Main/News/NewsView.html?ID=1152875', imgurl: 'https://pds.medicaltimes.com/NewsPhoto/20230331/1680233318.jpg', tag: ['Policy'], title: '심평원, 업무효율성 강화 문서자동인식 시스템 도입' },
-{ gourl: '', imgurl: '~~', tag: ['News', 'bio',], title: '안녕하세요 ~~~' },
-{ gourl: '', imgurl: '~~', tag: ['News', 'bio',], title: '안녕하세요 ~~~' },
-
+{ gourl: 'http://www.bosa.co.kr/news/articleView.html?idxno=2194393', imgurl: '../img/news/img26.png', tag: ['Forum'], title: "‘인터비즈 바이오 파트너링&투자포럼 2023’ 개최" },
+{ gourl: 'https://www.startuptoday.kr/news/articleView.html?idxno=46654', imgurl: 'https://cdn.startuptoday.kr/news/photo/202304/46654_33034_3940.jpg', tag: ['Fourm','Medical'], title: '케이엠디바이오, ADC보다 효과 좋은 PCSN으로 글로벌 항암제 시장 도전 [제272회 BTCN벤처포럼]' },
 ]
 
-const Com8data1 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '111'], name: '봄 된장1' }]
-const Com8data2 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '222'], name: '봄 된장2' }]
-const Com8data3 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '333'], name: '봄 된장3' }]
-const Com8data4 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '444'], name: '봄 된장4' }]
-const Com8data5 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '555'], name: '봄 된장5' }]
-const Com8data6 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '666'], name: '봄 된장6' }]
+
 
 
 const TagPage = () => {
@@ -51,15 +45,10 @@ const TagPage = () => {
                 <Header />
                 <Component1 title1='Bio News' contents={['Provides the latest bio-related news.','Learn about policies, forums and events, constraints, and the latest issues.']}/>
                 <br/>
-                <Component11 content1='전체' content2='POLICY' content3='FOURM' content4='ISSUES' content5='MEDICAL' link1='https://www.paris.co.kr/bread-now/?cat=전체' link2='https://www.paris.co.kr/bread-now/?cat=breadcook' link3="https://www.paris.co.kr/bread-now/?cat=breadstory" link4='https://www.paris.co.kr/bread-now/?cat=breadvideo' link5='https://www.paris.co.kr/bread-now/?cat=advertisement' />
-                <Component12 data={postData} />
-                <Component8 title1='추천레시피' title2='오뚜기가 ~~ 뭐시기' data={[Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6]} />
                 <Component11 tag={{ 'postData': postData, 'setTagData': setTagData, 'setSelectTag': setSelectTag, 'selectTag': selectTag }} categoryTitle={['ALL', 'POLICY', 'Forum', 'ISSUES', 'MEDICAL']} />
                 <Component12 data={tagData} />
-                <Component8 bgColor="#ffed93" title1='추천레시피' title2='오뚜기가 ~~ 뭐시기' data={[Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6]} />
-
                 <Footer />
         </>
 }
 
-export { TagPage, postData, Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6 }; 
+export { TagPage, postData}; 

@@ -10,8 +10,14 @@ import Component7 from "../components/component7";
 import Component8 from "../components/component8";
 import Component10 from "../components/component10";
 const com6Data = { imgheader: 'Public / Private / HDC', imgurl: "https://kakaoenterprise.com/wp-content/uploads/2022/10/pasted_image_at_2022-09-19T01_51_25.901Z-1-e1666245998166.png", textheader: '여러 형태의 클라우드 제공', textcontent: ['고객 요구사항에 적합한 여러 형태의 클라우드를 안정적으로', '지원하며, 합리적인 가격으로 신뢰성이 검증된 고성능의 ', '클라우드 인프라를 제공합니다.', '', '*HDC - Hybrid Data Center'], imgheader2: 'Installable', imgurl2: 'https://kakaoenterprise.com/wp-content/uploads/2023/01/0118보도자료섬네일.png', textheader2: '스탠다드 / 엔터프라이즈 / ML 타입', textcontent2: ['물리적으로 독립된 구조로 고객사 온프레미스 환경에', '퍼블릭 클라우드의 사용자 경험과 고가용성 서비스 등 ', '맞춤형 서비스를 제공합니다.'], moreurl: 'https://pages.kakaoenterprise.com/rs/714-QAI-126/images/Kakao i Cloud Installable.pdf' }
-
-const MarketPage = () =>
+const Com8data1 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '111'], name: '봄 된장1' }]
+const Com8data2 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '222'], name: '봄 된장2' }]
+const Com8data3 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '333'], name: '봄 된장3' }]
+const Com8data4 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '444'], name: '봄 된장4' }]
+const Com8data5 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '555'], name: '봄 된장5' }]
+const Com8data6 = [{ imgurl: "https://ottogi.okitchen.co.kr/pds/upfile/2021-05-29_147251679[22].jpg", tag: ['요린이', '봄', '666'], name: '봄 된장6' }]
+const MarketPage = () =>{
+        return(
         <>
                 <Header />
                 <Component1 title1='FEATURED SERVICES' contents={['네이버는 기술 플랫폼으로서 첨단 기술을 누구나 쉽게 활용할 수 있는 일상의 친숙한 서비스로 제공하기 위해', '변화를 추구하고, 이용자와 호흡하며 항상 새로운 도전을 시도합니다.']} />
@@ -34,10 +40,12 @@ const MarketPage = () =>
                         img3="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Enterprise-400x400?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;qlt=75&amp;wid=400&amp;hei=400"
                         img4="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Education-400x400?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;qlt=75&amp;wid=400&amp;hei=400"
                 />
+                <Component8 bgColor="#ffed93" title1='추천레시피' title2='오뚜기가 ~~ 뭐시기' data={[Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6]} />
                 <Component10 head='한 차원 높은 성능' contents={['프리미엄 기능과 원하는 방식으로 커스터마이징', '할 수 있는 기능으로 Mac 생산성을 한 차원 높여주세요.']} />
                 <Component10 reverse={true} head='한 차원 높은 성능' contents={['프리미엄 기능과 원하는 방식으로 커스터마이징', '할 수 있는 기능으로 Mac 생산성을 한 차원 높여주세요.']} />
                 <Footer />
         </>
+        )
+}
 
-
-export default MarketPage;
+export { MarketPage, Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6};
