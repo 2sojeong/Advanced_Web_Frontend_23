@@ -19,7 +19,7 @@ const Com8data6 = [{ imgurl: "https://images.ctfassets.net/bhbc4e60kzbl/1MWHvi08
 const InfoPage1 = () => {
         return <>
                 <Header />
-                <Component1 title1='MEDICINE' contents={['SooYeol BIO is a bio company that strives to provide customers with the right and appropriate medicines,', 'making new developments to provide effective medicines.']} />
+                <Component1 title1='MEDICINE' contents={['SoonYeol BIO is a bio company that strives to provide customers with the right and appropriate medicines,', 'making new developments to provide effective medicines.']} />
                 <br /><br /><br />
                 <Component4 color="#0082FF" head='Medicine company' title='Personal medicine' content1='Medicines are chemicals or compounds used to cure, halt, prevent disease or help in the diagnosis of illnesses.Our company offers reliable and proven medicines at reasonable prices, and exceptional technology across all areas helps our customers treat them.' content2='Learn more' link="https://kidshealth.org/en/teens/meds.html" image1={medicine} />
                 <br /><br /><br /><br /><br />
