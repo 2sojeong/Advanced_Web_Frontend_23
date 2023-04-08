@@ -1,10 +1,20 @@
 import React from "react";
 
 const Component2 = (props) => {
+    const gradient = 'linear-gradient(to right, rgba(0,0,0,0.0), rgba(0,0,0,5))';
+    const imgUrl = props.imgurl;
+    let reverse = props.reverse
+    if (reverse === undefined) {
+        reverse = false
+    }
+    let black = props.reverse
+    if (black === undefined) {
+        black = false
+    }
     const Content = () => <div style={{ maxWidth: '100%', width: '100%', position: 'relative', margin: '100px auto', border: '0', justifyContent: 'center', }} >
         <figure style={{ isolation: 'isolate', display: 'block', padding: '0px', margin: '0px' }} >
             <picture style={{ width: '100%', textAlign: 'center', wordBreak: 'keep-all', display: 'block', margin: '0', padding: '0' }}>
-                <img style={{ height: '400px', width: '100%', maxHeight: '570px', maxWidth: '100%', objectFit: 'cover', verticalAlign: 'top' }} loading="lazy" src={props.imgurl} width="1440" height="380" alt="" />
+                <img style={{ height: '400px', width: '100%', maxHeight: '570px', maxWidth: '100%', objectFit: 'cover', verticalAlign: 'top', transform: reverse ? 'scaleX(-1)' : 0, backgroundImage: black ? `${gradient}, url(${imgUrl})` : `url(${imgUrl})` }} loading="lazy" width="1440" height="380" alt="" />
             </picture>
         </figure>
         <div style={{ maxWidth: '1100px', width: '100%', position: 'absolute', padding: '0', top: 'calc(50% - 110px)', left: 'calc(50% - 600px)', color: '#ffffff' }} >
