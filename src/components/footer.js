@@ -36,7 +36,7 @@ const Footer = () => {
                     </li>
                     <li style={listSyle}>
                         <div style={{ display: 'flex' }}>
-                            <p style={{ ...linkstyle, width: '70px', margin: '0', padding: '0' }}>202135512</p>
+                            <p style={{ ...linkstyle, width: '70px', margin: '0', padding: '0' }}>202135514</p>
                             <p style={{ ...linkstyle, width: '45px', margin: '0', padding: '0' }}>김미소</p>
                         </div>
                     </li>
