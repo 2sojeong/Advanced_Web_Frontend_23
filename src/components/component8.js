@@ -8,7 +8,7 @@ const Component8 = (propss) => {
             btagString = tags.join(' #');
         }
         return <>
-            <div style={{ position: "relative", width: "100%" }}>
+            <div id={propss.id} style={{ position: "relative", width: "100%" }}>
                 <a>
                     <div style={{ width: "100%", height: "100%", overFlow: "hidden" }}>
                         <div>

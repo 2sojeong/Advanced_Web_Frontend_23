@@ -2,7 +2,9 @@ import bannerImg from "../img/227_5.jpg";
 import call from "../img/call.png";
 import mail from "../img/mail.png";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { useLocation } from "react-router-dom";
+import { scrollWithOffset } from "../utils/util";
 const Footer = () => {
     const listSyle = { listStyle: 'none' }
     const linkstyle = { color: 'rgba(17,17,17,0.6)', fontSize: '13px', fontWeight: '400', letterSpacing: '0.2pt', lineHeight: '28px', cursor: 'pointer', textDecoration: 'none' }
@@ -64,16 +66,13 @@ const Footer = () => {
                         Medicine
                     </span>
                     <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
+                        <HashLink style={linkstyle} smooth to={'/info1/#section1'} scroll={el => scrollWithOffset(el)}>Company</HashLink>
                     </li>
                     <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
+                        <HashLink style={linkstyle} smooth to={'/info1/#section2'} scroll={el => scrollWithOffset(el)}>Category</HashLink>
                     </li>
                     <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
-                    </li>
-                    <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
+                        <HashLink style={linkstyle} smooth to={'/info1/#section3'} scroll={el => scrollWithOffset(el)}>Products</HashLink>
                     </li>
                 </ul>
                 <ul style={ulstyle}>
@@ -81,16 +80,13 @@ const Footer = () => {
                         BioTech
                     </span>
                     <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
+                        <HashLink style={linkstyle} smooth to={'/info2/#section1'} scroll={el => scrollWithOffset(el)}>What is?</HashLink>
                     </li>
                     <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
+                        <HashLink style={linkstyle} smooth to={'/info2/#section2'} scroll={el => scrollWithOffset(el)}>Tech Influence</HashLink>
                     </li>
                     <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
-                    </li>
-                    <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
+                        <HashLink style={linkstyle} smooth to={'/info2/#section3'} scroll={el => scrollWithOffset(el)}>Tech Company</HashLink>
                     </li>
                 </ul>
                 <ul style={ulstyle}>
@@ -98,16 +94,13 @@ const Footer = () => {
                         HealthCare
                     </span>
                     <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
+                        <HashLink style={linkstyle} smooth to={'/info3/#section1'} scroll={el => scrollWithOffset(el)}>Services</HashLink>
                     </li>
                     <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
+                        <HashLink style={linkstyle} smooth to={'/info3/#section2'} scroll={el => scrollWithOffset(el)}>Trends</HashLink>
                     </li>
                     <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
-                    </li>
-                    <li style={listSyle}>
-                        <Link style={linkstyle} to={{ pathname: '/' }}>About us</Link>
+                        <HashLink style={linkstyle} smooth to={'/info3/#section3'} scroll={el => scrollWithOffset(el)}>New-Tech</HashLink>
                     </li>
                 </ul>
             </div>

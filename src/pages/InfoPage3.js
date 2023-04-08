@@ -28,7 +28,7 @@ const InfoPage3 = () => {
         <Component1 title1='HEALTH CARE' contents={['Health care is a term that refers to all services provided ', 'to individuals or communities in order to maintain and improve their health.']} />
         <Component2 head='HEALTH CARE' contents={[' Your Healthy Choice', 'Healthcare makes a better future']} url="https://www.mdpi.com/journal/healthcare" imgurl={bannerImg} />
 
-        <Component7 title='HEALTH CARE Includes Services' content='Promote and Maintain the Physical, Mental, and Emotional Well-Being of Individuals and Populations.'
+        <Component7 id='section1' title='HEALTH CARE Includes Services' content='Promote and Maintain the Physical, Mental, and Emotional Well-Being of Individuals and Populations.'
             bar1='Prevention' bar2='Diagnosis' bar3='Treatment' bar4='Rehabilitation'
             link1='#section2'
             link2="https://www.microsoft.com/ko-kr/microsoft-teams/free"
@@ -45,8 +45,8 @@ const InfoPage3 = () => {
         <Component10 head='Treatment' img={Img3_8} contents={['Treatment services are provided to treat diseases or conditions, including medication, surgery, radiation, ', 'and other medical procedures.']} />
         <Component10 reverse={true} img={Img3_9} head='Rehabilitation' contents={['Rehabilitation services help you recover in the hospital. ', 'This includes physical therapy, occupational therapy,', ' and speech therapy.']} />
         <div style={{ margin: '200px' }} />
-        <Component3 head='Trends' subtitle='Healthcare & IT Technology' content1='The development of information  ' content2='technology has led to the ' content3='incorporation of IT technology ' content4='in the medical field.' content5='The adoption of information technology in healthcare has also led to the development of new healthcare services and solutions that have helped improve the quality of healthcare.' img={Img3_10} />
-        <Component6 data={com6Data} />
+        <Component3 id='section2' head='Trends' subtitle='Healthcare & IT Technology' content1='The development of information  ' content2='technology has led to the ' content3='incorporation of IT technology ' content4='in the medical field.' content5='The adoption of information technology in healthcare has also led to the development of new healthcare services and solutions that have helped improve the quality of healthcare.' img={Img3_10} />
+        <Component6 id='section3' data={com6Data} />
         <div style={{ margin: '200px' }} />
         < Footer />
     </>

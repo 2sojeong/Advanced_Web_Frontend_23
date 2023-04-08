@@ -8,7 +8,7 @@ const Component6 = (propss) => {
     </>
     return (
         <>
-            <div style={{ marginTop: '80px', maxWidth: '1250px', minHeight: '700px', marginRight: "auto", marginLeft: "auto", padding: '20px', border: '0', boxSizing: 'border-box', display: 'block', verticalAlign: 'baseline' }} >
+            <div id={propss.id} style={{ marginTop: '80px', maxWidth: '1250px', minHeight: '700px', marginRight: "auto", marginLeft: "auto", padding: '20px', border: '0', boxSizing: 'border-box', display: 'block', verticalAlign: 'baseline' }} >
 
                 <div style={{ float: 'none', width: '100%' }} >
                     <ul style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: '50px', listStyle: 'none' }} >

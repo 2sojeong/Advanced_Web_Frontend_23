@@ -10,7 +10,7 @@ const b = {
 const Component3 = (props) => {
     return (
         <>
-            <div id="container" style={{
+            <div id={props.id} style={{
                 marginTop: "72px",
                 ...a
             }}>
