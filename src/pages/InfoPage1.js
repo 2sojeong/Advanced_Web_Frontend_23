@@ -7,6 +7,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 
 import medicine from "../img/medicine.png";
+import family from "../img/family.jpg"
 
 const Com8data1 = [{ imgurl: "https://static.chemistwarehouse.com.au/ams/media/pi/53953/3DF_800.jpg", tag: ['Sore throat', 'Anti-inflammatory', 'Cough drop'], name: 'Strepsils' }]
 const Com8data2 = [{ imgurl: "https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dwb75365e3/products/L2711257/large/L2711257.JPG", tag: ['Pain relief', 'Fever reducer', 'Very safe'], name: 'Tylenol' }]
@@ -36,7 +37,7 @@ const InfoPage1 = () => {
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <Component8 bgColor="#9CF" title1='Major Medicines' title2='Experience a definite effect with the major medicine suggested by SoonYeol BIO' data={[Com8data1, Com8data2, Com8data3, Com8data4, Com8data5, Com8data6]} />
                 <br /><br /><br />
-                <Component2 head='Medicine' contents={['Small but big power', 'healing your body']} url="https://www.drugs.com/alpha/a.html" imgurl="https://florencehomes.info/wp-content/uploads/2017/09/happy-family.jpg" />
+                <Component2 head='Medicine' contents={['Small but big power', 'healing your body']} url="https://www.drugs.com/alpha/a.html" imgurl={family} />
                 <Footer />
         </>
 }
