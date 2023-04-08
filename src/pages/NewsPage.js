@@ -4,7 +4,6 @@ import Component12 from '../components/component12';
 import Footer from '../components/footer';
 import Component1 from '../components/component1';
 import { useState } from 'react';
-
 import img1 from '../img/newsimg/img1.jpeg';
 import img2 from '../img/newsimg/img2.jpeg';
 import img3 from '../img/newsimg/img3.jpeg';
@@ -61,21 +60,17 @@ const postData = [{ gourl: 'https://www.biotimes.co.kr/news/articleView.html?idx
 { gourl: 'http://www.bosa.co.kr/news/articleView.html?idxno=2194393', imgurl:img26, tag: ['Forum'], title: "‘인터비즈 바이오 파트너링&투자포럼 2023’ 개최" },
 { gourl: 'https://www.startuptoday.kr/news/articleView.html?idxno=46654', imgurl: img27, tag: ['Forum','Medical'], title: '케이엠디바이오, ADC보다 효과 좋은 PCSN으로 글로벌 항암제 시장 도전 [제272회 BTCN벤처포럼]' },
 ]
-            
-
-
-
-const TagPage = () => {
+const NewsPage = () => {
         const [tagData, setTagData] = useState(postData)
         const [selectTag, setSelectTag] = useState('ALL')
         return <>
                 <Header />
-                <Component1 title1='Bio News' contents={['Provides the latest bio-related news.','Learn about policies, forums and events, constraints, and the latest issues.']}/>
-                <br/>
+                <Component1 title1='Bio News' contents={['Provides the latest bio-related news.', 'Learn about policies, forums and events, constraints, and the latest issues.']} />
+                <br />
                 <Component11 tag={{ 'postData': postData, 'setTagData': setTagData, 'setSelectTag': setSelectTag, 'selectTag': selectTag }} categoryTitle={['ALL', 'POLICY', 'Forum', 'ISSUES', 'MEDICAL']} />
                 <Component12 data={tagData} />
                 <Footer />
         </>
 }
 
-export { TagPage, postData}; 
+export { NewsPage, postData }; 
