@@ -33,7 +33,7 @@ const Component4 = (props) => {
                     <div class="component-intro__easel" style={{ display: "block", width: "auto", verticalAlign: "middle", position: "relative" }}>
                         <div class="component-intro__bg" style={{ width: "100%", height: "100%", position: "absolute", left: 0, right: 0, top: 0, bottom: 0 }}>
                             <div class="component-intro__bg-image" style={{ margin: "0 0 0 5px", height: "100%" }}>
-                                <img src={props.image1} style={{ borderRadius: "20px", width: "100%", height: "100%", background: "center", backgroundSize: "cover", display: "block" }}></img></div>
+                                <img src={props.image1} style={{ objectFit: 'cover', borderRadius: "20px", width: "100%", height: "100%", background: "center", backgroundSize: "cover", display: "block" }}></img></div>
 
 
                         </div>

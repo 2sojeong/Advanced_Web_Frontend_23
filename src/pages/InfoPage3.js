@@ -26,7 +26,7 @@ const InfoPage3 = () => {
     return <>
         <Header />
         <Component1 title1='HEALTH CARE' contents={['Health care is a term that refers to all services provided ', 'to individuals or communities in order to maintain and improve their health.']} />
-        <Component2 head='HEALTH CARE' contents={[' Your Healthy Choice', 'Healthcare makes a better future']} url="https://www.mdpi.com/journal/healthcare" imgurl={bannerImg} />
+        <Component2 head='HEALTH CARE' contents={[' Your Healthy Choice', 'Healthcare Makes a Better Future']} url="https://www.mdpi.com/journal/healthcare" imgurl={bannerImg} />
 
         <Component7 id='section1' title='HEALTH CARE Includes Services' content='Promote and Maintain the Physical, Mental, and Emotional Well-Being of Individuals and Populations.'
             bar1='Prevention' bar2='Diagnosis' bar3='Treatment' bar4='Rehabilitation'
