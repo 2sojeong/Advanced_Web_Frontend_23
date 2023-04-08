@@ -30,7 +30,7 @@ const MarketPage = () =>
                         link3="https://www.microsoft.com/ko-kr/microsoft-teams/teams-for-work"
                         link4="https://www.microsoft.com/ko-kr/microsoft-teams/education"
                         img1='https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Home-400x400?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;qlt=75&amp;wid=400&amp;hei=400'
-                        img2='https://www.felixhospital.com/sites/default/files/2022-11/best-pharmacy-services-hospital-in-noida.jpg'
+                        img2='https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Business-400x400?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;qlt=75&amp;wid=400&amp;hei=400'
                         img3="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Enterprise-400x400?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;qlt=75&amp;wid=400&amp;hei=400"
                         img4="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Education-400x400?resMode=sharp2&amp;op_usm=1.5,0.65,15,0&amp;qlt=75&amp;wid=400&amp;hei=400"
                 />
