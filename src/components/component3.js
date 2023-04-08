@@ -43,9 +43,9 @@ const Component3 = (props) => {
                                     <dt style={{
                                         ...a,
                                         ...b, fontSize: "56px",
-                                        fontWeight: "800",
+                                        fontWeight: "900",
                                         color: "#000"
-                                    }}>TWOSOME COFFEE STORY</dt>
+                                    }}>{props.subtitle}</dt>
                                     <dd style={{
                                         ...a, ...b, fontSize: "32px",
                                         fontWeight: "700",
@@ -75,7 +75,8 @@ const Component3 = (props) => {
                                     ...a,
                                     height: "auto",
                                     maxWidth: "100%",
-                                    verticalAlign: "middle"
+                                    verticalAlign: "middle",
+                                    aspectRatio: ' 250 / 310', overflow: 'hidden', objectFit: 'cover'
                                 }} src={props.img} alt="커피 사진"></img>
                             </div>
                         </div>
