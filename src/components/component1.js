@@ -5,7 +5,7 @@ const Component1 = (props) => {
     return (
         <>
 
-            <div>
+            <div style={{ marginTop: '30px', marginBottom: '150px' }}>
                 <h2 style={{
                     fontSize: "42px", letterSpacing: "-2.5px", display: "flex", alignItems: "center",
                     justifyContent: 'center', padding: "20px", textTransform: 'uppercase',

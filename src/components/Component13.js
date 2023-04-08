@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
+import buttonicon from '../img/icon_btn_more.png'
 const Component13 = (props) => {
     return (
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -33,7 +33,7 @@ const Component13 = (props) => {
                         <img style={{
                             verticalAlign: "middle",
                             paddingLeft: "10px"
-                        }} src="https://www.celltrion.com/image/common/icon_btn_more.png" alt />
+                        }} src={buttonicon} alt />
                     </Link>
                 </p>
             </div>

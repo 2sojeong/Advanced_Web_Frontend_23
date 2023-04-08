@@ -1,4 +1,6 @@
 import bannerImg from "../img/227_5.jpg";
+import call from "../img/call.png";
+import mail from "../img/mail.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 const Footer = () => {
@@ -12,12 +14,12 @@ const Footer = () => {
         {location['pathname'] !== '/' && <div style={{ maxWidth: '1390px', width: '100%', height: '1px', background: '#ddd', margin: '0 auto', padding: '0 20px' }} />}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '60px 20px 80px 116px', maxWidth: '1390px', width: '100%', boxSizing: 'border-box', position: 'relative', margin: '0 auto' }}>
             <div>
-                <h1 style={{ width: '154px', height: '59px', marginBottom: '70px', padding: 0, }}><img src={bannerImg} style={{ width: '100%' }} /></h1>
-                <p style={{ ...infostyle, display: 'inline-block' }}>(주)코아팜바이오</p>
-                <p style={{ ...infostyle }}>경기도 성남시 수정구 복정로 103</p>
-                <p style={{ ...infostyle }}>충청북도 청주시 흥덕구 오송읍 오송생명14로 5(정중리 684)</p>
-                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: 'url(http://www.corepharm.com/img/call.png) no-repeat center / cover', marginRight: '5px' }} />02-927-8220</p>
-                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: 'url(http://www.corepharm.com/img/mail.png) no-repeat center / cover', marginRight: '5px' }} />info@corepharm.com</p>
+                <h1 style={{ width: '154px', height: '59px', marginBottom: '70px', padding: 0, }}><img src={bannerImg} style={{ width: '100%', borderRadius: '10px' }} /></h1>
+                <p style={{ ...infostyle, display: 'inline-block' }}>(주)순두부열라면바이오</p>
+                <p style={{ ...infostyle }}>경기도 성남시 수정구 성남대로 1342</p>
+                <p style={{ ...infostyle }}>2023 가천대학교 고급웹프로그래밍 팀프로젝트 - React</p>
+                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: `url(${call}) no-repeat center / cover', marginRight: '5px` }} />031-750-8659</p>
+                <p style={{ ...infostyle, display: 'inline-block' }}><div style={{ display: 'inline-block', width: '14px', height: '12px', background: `url(${mail}) no-repeat center / cover', marginRight: '5px` }} />swdm@gachon.ac.kr</p>
             </div>
             <div style={{ display: 'grid', width: '50%', gridTemplateColumns: 'repeat(4, auto)', gap: '20px', margin: 0, padding: 0 }}>
                 <ul style={ulstyle}>
@@ -89,7 +91,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div style={{ writingMode: 'vertical-rl', whiteSpace: 'nowrap', opacity: '0.5', color: '#777', fontSize: '12px', fontWeight: '400', letterSpacing: '0.3pt', lineHeight: '180%', textTransform: 'uppercase', position: 'absolute', top: '50%', left: '20px', transform: 'translateY(-50%) rotate(180deg)' }}>© COREPHARM BIO. All rights reserved.</div>
+            <div style={{ writingMode: 'vertical-rl', whiteSpace: 'nowrap', opacity: '0.5', color: '#777', fontSize: '12px', fontWeight: '400', letterSpacing: '0.3pt', lineHeight: '180%', textTransform: 'uppercase', position: 'absolute', top: '50%', left: '20px', transform: 'translateY(-50%) rotate(180deg)' }}>© SoonYeol BIO. All rights reserved.</div>
         </div ></>
 }
 
