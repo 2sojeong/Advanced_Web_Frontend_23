@@ -8,7 +8,7 @@ const Component6 = (propss) => {
     </>
     return (
         <>
-            <div style={{ marginTop: '100px', maxWidth: '1250px', minHeight: '700px', marginRight: "auto", marginLeft: "auto", padding: '20px', border: '0', boxSizing: 'border-box', display: 'block', verticalAlign: 'baseline' }} >
+            <div style={{ marginTop: '80px', maxWidth: '1250px', minHeight: '700px', marginRight: "auto", marginLeft: "auto", padding: '20px', border: '0', boxSizing: 'border-box', display: 'block', verticalAlign: 'baseline' }} >
 
                 <div style={{ float: 'none', width: '100%' }} >
                     <ul style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: '50px', listStyle: 'none' }} >
@@ -16,7 +16,7 @@ const Component6 = (propss) => {
                             <ImageBox imgheader={propss.data.imgheader} imgurl={propss.data.imgurl} />
                             <div style={{ marginTop: '30px', display: 'block' }} >
                                 <h3 style={{
-                                    fontSize: '30px', fontWeight: '600', lineHeight: '1.41', overflow: 'hidden', textOverflow: 'clip',
+                                    fontSize: '25px', fontWeight: '600', lineHeight: '1.41', overflow: 'hidden', textOverflow: 'clip',
                                     display: '-webkit-box', webkitBoxOrient: 'vertical', padding: '0px', margin: '0px'
                                 }} >{propss.data.textheader}</h3>
                                 <p style={{
@@ -29,7 +29,7 @@ const Component6 = (propss) => {
                             <ImageBox imgheader={propss.data.imgheader2} imgurl={propss.data.imgurl2} />
                             <div style={{ marginTop: '30px', display: 'block' }} >
                                 <h3 style={{
-                                    fontSize: '30px', fontWeight: '600', lineHeight: '1.41', overflow: 'hidden', textOverflow: 'clip',
+                                    fontSize: '25px', fontWeight: '600', lineHeight: '1.41', overflow: 'hidden', textOverflow: 'clip',
                                     display: '-webkit-box', webkitBoxOrient: 'vertical', padding: '0px', margin: '0px'
                                 }} >{propss.data.textheader2}</h3>
                                 <p style={{
@@ -41,7 +41,7 @@ const Component6 = (propss) => {
                                         marginRight: '0', display: 'inline-block', verticalAlign: 'middle', padding: '10px 29px 10px 0', position: 'relative', textAlign: 'center',
                                         fontSize: '20px', fontWeight: '400', lineHeight: '1', color: '#888', border: 'none', textDecoration: 'none'
                                     }} href={propss.data.moreurl} target="_blank" rel="noopener">
-                                        <span>자세히 보기</span>
+                                        <span>More Info</span>
                                         <div style={{ width: '22px', height: '22px', marginTop: '20px', position: 'absolute', right: '0', top: '-25%', background: '#eee', borderRadius: '50%' }} >
                                             <i><svg width="12" height="12" viewBox="0 0 12 12">
                                                 <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M4.1,2.5h5.4v5.3"></path>

@@ -3,9 +3,25 @@ import Footer from '../components/footer';
 import Component1 from '../components/component1';
 import Component2 from '../components/component2';
 import Component3 from '../components/component3';
+import Component6 from '../components/component6';
 import Component7 from '../components/component7';
 import Component10 from '../components/component10';
 import bannerImg from "../img/info_3_1.jpg";
+import Img3_2 from "../img/info_3_2.jpg";
+import Img3_3 from "../img/info_3_3.jpg";
+import Img3_4 from "../img/info_3_4.jpg";
+import Img3_5 from "../img/info_3_5.jpg";
+import Img3_6 from "../img/info_3_6.jpg";
+import Img3_7 from "../img/info_3_7.jpg";
+import Img3_8 from "../img/info_3_8.jpg";
+import Img3_9 from "../img/info_3_9.jpg";
+import Img3_10 from "../img/info_3_10.jpg";
+import Img3_11 from "../img/info_3_11.jpg";
+import Img3_12 from "../img/info_3_12.jpg";
+
+const com6Data = { imgheader: 'Electronic Medical Record', imgurl: Img3_11, textheader: 'Store and Manage Patient Medical Records', textcontent: ['This enables health professionals to understand  ', 'patients\' health and improve communication', 'with them.', '', '*EMR - Electronic Medical Record'], imgheader2: 'Telemedic', imgurl2: Img3_12, textheader2: 'Telemedicine between Patients and Professionals', textcontent2: ['Telemedics allows patients to receive medical care at home,', 'and healthcare professionals can treat patients', 'without any distance and time constraints between regions.'], moreurl: 'https://www.telemedic.com/' }
+
+
 const InfoPage3 = () => {
     return <>
         <Header />
@@ -18,19 +34,20 @@ const InfoPage3 = () => {
             link2="https://www.microsoft.com/ko-kr/microsoft-teams/free"
             link3="https://www.microsoft.com/ko-kr/microsoft-teams/teams-for-work"
             link4="https://www.microsoft.com/ko-kr/microsoft-teams/education"
-            img1="https://cdn.pixabay.com/photo/2020/04/02/19/15/hand-washing-4996426_1280.jpg"
-            img2='https://cdn.pixabay.com/photo/2019/04/03/03/06/treatment-4099432_1280.jpg'
-            img3="https://cdn.pixabay.com/photo/2016/11/08/05/29/surgery-1807541_1280.jpg"
-            img4="https://cdn.pixabay.com/photo/2015/01/10/17/32/physiotherapy-595529_1280.jpg"
+            img1={Img3_2}
+            img2={Img3_3}
+            img3={Img3_4}
+            img4={Img3_5}
         />
         <div style={{ margin: '700px' }} />
-        <Component10 head='Prevention' img='https://cdn.pixabay.com/photo/2020/03/17/12/44/washing-hands-4940239_1280.jpg' contents={['Preventive health care services help an individual maintain a healthy life. ', 'This includes vaccinations, healthy eating habits, ', 'regular exercise, and regular health checkups.']} />
-        <Component10 reverse={true} img='https://cdn.pixabay.com/photo/2017/06/30/15/32/investigation-2458540_1280.jpg' head='Diagnosis' contents={['Diagnostic services help identify a disease or condition and are usually performed by medical professionals such as doctors, nurses, or dentists. X-rays, blood tests, ultrasound, and other diagnostic techniques are used.']} />
-        <Component10 head='Treatment' img='https://cdn.pixabay.com/photo/2018/05/30/22/54/tablets-3442768_1280.jpg' contents={['Treatment services are provided to treat diseases or conditions, including medication, surgery, radiation, ', 'and other medical procedures.']} />
-        <Component10 reverse={true} img='https://cdn.pixabay.com/photo/2020/04/30/12/44/therapy-center-5112724_1280.jpg' head='Rehabilitation' contents={['Rehabilitation services help you recover in the hospital. ', 'This includes physical therapy, occupational therapy,', ' and speech therapy.']} />
-        <div style={{ margin: '300px' }} />
-        <Component3 head='Trends' subtitle='Healthcare & IT Technology' content1='The development of information  ' content2='technology has led to the ' content3='incorporation of IT technology ' content4='in the medical field.' content5='The adoption of information technology in healthcare has also led to the development of new healthcare services and solutions that have helped improve the quality of healthcare.' img="https://www.dentons.com/-/media/images/website/background-images/industry-sectors/life-sciences-and-health-care/healthcare-22.ashx?sc_lang=en" />
-
+        <Component10 head='Prevention' img={Img3_6} contents={['Preventive health care services help an individual maintain a healthy life. ', 'This includes vaccinations, healthy eating habits, ', 'regular exercise, and regular health checkups.']} />
+        <Component10 reverse={true} img={Img3_7} head='Diagnosis' contents={['Diagnostic services help identify a disease or condition and are usually performed by medical professionals such as doctors, nurses, or dentists. X-rays, blood tests, ultrasound, and other diagnostic techniques are used.']} />
+        <Component10 head='Treatment' img={Img3_8} contents={['Treatment services are provided to treat diseases or conditions, including medication, surgery, radiation, ', 'and other medical procedures.']} />
+        <Component10 reverse={true} img={Img3_9} head='Rehabilitation' contents={['Rehabilitation services help you recover in the hospital. ', 'This includes physical therapy, occupational therapy,', ' and speech therapy.']} />
+        <div style={{ margin: '200px' }} />
+        <Component3 head='Trends' subtitle='Healthcare & IT Technology' content1='The development of information  ' content2='technology has led to the ' content3='incorporation of IT technology ' content4='in the medical field.' content5='The adoption of information technology in healthcare has also led to the development of new healthcare services and solutions that have helped improve the quality of healthcare.' img={Img3_10} />
+        <Component6 data={com6Data} />
+        <div style={{ margin: '200px' }} />
         < Footer />
     </>
 }
