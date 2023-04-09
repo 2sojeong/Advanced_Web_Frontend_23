@@ -12,10 +12,12 @@ const Component10 = (props) => {
     }}>
         <p style={{ fontWeight: 'bold', fontSize: '37px', margin: '0px 0px 10px 0px' }}>{props.head}</p>
         <p style={{ fontWeight: 'lighter', lineHeight: '30px', fontSize: '19px' }}>{props.contents.map((content) => <>{content}<br /></>)}</p>
+        <div id={props.id} ></div>
     </div>
     return (
-        <div id={props.id} style={{ width: '100%', display: 'flex', justifyContent: 'center', margin: '75px auto' }}>
+        <div style={{ width: '100%', display: 'flex', justifyContent: 'center', margin: '75px auto' }}>
             {reverse ? <><Content /><Img /></> : <><Img /><Content /></>}
+
         </div>
     );
 }

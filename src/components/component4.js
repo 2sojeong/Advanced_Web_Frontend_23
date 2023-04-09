@@ -2,7 +2,7 @@ import React from "react";
 
 const Component4 = (props) => {
     return <>
-        <div style={{ fontFamily: "'KakaoBig',sans-serif", fontSize: "16", wordBreak: "keep-all", display: "block", color: "#191919", verticalAlign: "baseline" }}>
+        <div id={props.id} style={{ fontFamily: "'KakaoBig',sans-serif", fontSize: "16", wordBreak: "keep-all", display: "block", color: "#191919", verticalAlign: "baseline" }}>
             <div style={{ margin: "0 auto ", width: '1300px', position: "relative", display: "block" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", columnGap: "10", minHeight: "470px", tableLayout: "fixed", width: "100%", position: "relative" }}>
                     <div style={{ margin: "0 5px 0 0", display: "flex", borderRadius: "20px", width: "auto", fontSize: "16px", verticalAlign: "middle", position: "relative", background: props.color, paddingLeft: "108", paddingRight: "108px", paddingTop: "0", paddingBottom: "0", padding: "0px 100px 0px 100px", overflow: "hidden" }}>

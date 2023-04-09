@@ -3,7 +3,7 @@ import React from "react";
 const Component7 = (props) => {
     return (
         <>
-            <div style={{ float: "left", clear: "none", width: "100%", boxSizing: "border-box", display: "block" }}>
+            <div id={props.id} style={{ float: "left", clear: "none", width: "100%", boxSizing: "border-box", display: "block" }}>
                 <div style={{ display: "block", width: "100%", boxSizing: "border" }}>
                     <div class="container" style={{ maxWidth: "1600px", paddingRight: "5%", paddingLeft: "5%", width: "90%", boxSizing: "contentBox", marginRight: "auto", marginLeft: "auto", display: "block", color: "#000000", textAlign: "left", fontWeight: "400", lineHeight: "1.5", fontSize: "1rem" }}>
                         <div style={{ boxSizing: "border-box", clear: "both", margin: "0 90px 0 -130px" }}>
@@ -128,6 +128,7 @@ const Component7 = (props) => {
                         </div>
                     </div>
                 </div >
+                <div id={props.idd} />
             </div >
         </>
     );
