@@ -29,8 +29,7 @@ const Visual2 = () => {
                 <h2 style={{ fontSize: '90px', fontWeight: 'bold', color: '#fff', margin: '0' }}>CARE</h2>
                 <p style={{ color: '#fff', opacity: '0.8', fontSize: '21px', lineHeight: '30px', margin: '0 0 60px 0' }}>Health care provides to individuals or communities<br />in order to maintain and improve their health.</p>
                 <ul style={{ maxWidth: '464px', position: 'relative', margin: '0 auto', textAlign: 'center', padding: '0' }}>
-                    <Li to='info3' section='section1'>Services
-                    </Li>
+                    <Li to='info3' section='section1'>Services</Li>
                     <Li to='info3' section='section2'>Trends</Li>
                     <Li to='info3' section='section3'>New-Tech</Li>
                 </ul>

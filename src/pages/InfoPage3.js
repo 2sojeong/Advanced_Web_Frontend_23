@@ -30,20 +30,20 @@ const InfoPage3 = () => {
 
         <Component7 id='section1' title='HEALTH CARE Includes Services' content='Promote and Maintain the Physical, Mental, and Emotional Well-Being of Individuals and Populations.'
             bar1='Prevention' bar2='Diagnosis' bar3='Treatment' bar4='Rehabilitation'
-            link1='#section2'
-            link2="https://www.microsoft.com/ko-kr/microsoft-teams/free"
-            link3="https://www.microsoft.com/ko-kr/microsoft-teams/teams-for-work"
-            link4="https://www.microsoft.com/ko-kr/microsoft-teams/education"
+            link1='#section_1'
+            link2='#section_2'
+            link3='#section_3'
+            link4='#section_4'
             img1={Img3_2}
             img2={Img3_3}
             img3={Img3_4}
             img4={Img3_5}
         />
         <div style={{ margin: '700px' }} />
-        <Component10 head='Prevention' img={Img3_6} contents={['Preventive health care services help an individual maintain a healthy life. ', 'This includes vaccinations, healthy eating habits, ', 'regular exercise, and regular health checkups.']} />
-        <Component10 reverse={true} img={Img3_7} head='Diagnosis' contents={['Diagnostic services help identify a disease or condition and are usually performed by medical professionals such as doctors, nurses, or dentists. X-rays, blood tests, ultrasound, and other diagnostic techniques are used.']} />
-        <Component10 head='Treatment' img={Img3_8} contents={['Treatment services are provided to treat diseases or conditions, including medication, surgery, radiation, ', 'and other medical procedures.']} />
-        <Component10 reverse={true} img={Img3_9} head='Rehabilitation' contents={['Rehabilitation services help you recover in the hospital. ', 'This includes physical therapy, occupational therapy,', ' and speech therapy.']} />
+        <Component10 id='section_1' head='Prevention' img={Img3_6} contents={['Preventive health care services help an individual maintain a healthy life. ', 'This includes vaccinations, healthy eating habits, ', 'regular exercise, and regular health checkups.']} />
+        <Component10 id='section_2' reverse={true} img={Img3_7} head='Diagnosis' contents={['Diagnostic services help identify a disease or condition and are usually performed by medical professionals such as doctors, nurses, or dentists. X-rays, blood tests, ultrasound, and other diagnostic techniques are used.']} />
+        <Component10 id='section_3' head='Treatment' img={Img3_8} contents={['Treatment services are provided to treat diseases or conditions, including medication, surgery, radiation, ', 'and other medical procedures.']} />
+        <Component10 id='section_4' reverse={true} img={Img3_9} head='Rehabilitation' contents={['Rehabilitation services help you recover in the hospital. ', 'This includes physical therapy, occupational therapy,', ' and speech therapy.']} />
         <div style={{ margin: '200px' }} />
         <Component3 id='section2' head='Trends' subtitle='Healthcare & IT Technology' content1='The development of information  ' content2='technology has led to the ' content3='incorporation of IT technology ' content4='in the medical field.' content5='The adoption of information technology in healthcare has also led to the development of new healthcare services and solutions that have helped improve the quality of healthcare.' img={Img3_10} />
         <Component6 id='section3' data={com6Data} />
