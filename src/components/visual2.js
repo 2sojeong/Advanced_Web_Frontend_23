@@ -1,5 +1,6 @@
 import Img1 from "../img/Biotechnology-Salaries.jpg";
 import Img2 from '../img/Healthcare_22.jpg'
+import more from '../img/ico_more_w02.png'
 import { HashLink } from "react-router-hash-link";
 import { scrollWithOffset } from '../utils/util';
 const Visual2 = () => {
@@ -7,7 +8,7 @@ const Visual2 = () => {
         <HashLink smooth to={'/' + props.to + '/#' + props.section} scroll={el => scrollWithOffset(el)}
             style={{ zIndex: '99999', position: 'relative', display: 'block', width: '300px', height: '64px', margin: '6px 6px', padding: '0 20px', border: '1px solid rgba(255, 255, 255, 0.5)', fontSize: '20px', color: '#fff', textAlign: 'left', lineHeight: '62px', textDecoration: 'none', fontWeight: 'bold' }}>
             {props.children}
-            <div style={{ position: 'absolute', right: '16px', top: '47%', width: '21px', height: '15px', marginTop: '-7px', background: 'url(https://mis-prod-koce-skhynixhomepage-cdn-01-ep.azureedge.net/img/common/ico_more_w02.png) no-repeat 0 0 / contain' }} />
+            <div style={{ position: 'absolute', right: '16px', top: '47%', width: '21px', height: '15px', marginTop: '-7px', background: `url(${more}) no-repeat 0 0 / contain` }} />
         </HashLink>
     </li >
     return <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, auto)' }}>
